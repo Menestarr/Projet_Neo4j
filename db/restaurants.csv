@@ -1,0 +1,962 @@
+restaurant_id,business_id,name,stars,review_count,price_range
+0,Dy91wdWkwtI_qgjAIZ0Niw,Taqueria Los Primos,4.0,23,1.0
+1,_Oksx3ALgKLRVxeAR8l_qA,V-Trap Kitchen and Lounge,5.0,13,2.0
+2,_NhT0A3LUEd75L_cEXf2_A,Season's Pizza,3.0,7,
+3,A_-Vv5oKZNqxsV69_7E2KQ,8th & Union Kitchen,3.5,177,2.0
+4,JNH-hcySeuGmtI_t8dG3Dw,Del Rose Cafe,4.0,8,2.0
+5,ekBvLA43oEWEswUXZI0bYQ,Shawerma Palace,4.5,8,
+6,5R6YO6K9PkthkTbXqV9slQ,Sakura Japanese Restaurant,4.0,86,2.0
+7,iXemjTj5TOByT1-cNTSaDw,PureBread Deli,4.0,64,1.0
+8,5ODCsQbRdsFIWlypGF3iUw,Brandywine Brewing Company Restaurant & Brewery,3.0,28,2.0
+9,s-7Q1GAQmB-Qsm_UwviHVA,Lone Star Steakhouse,2.0,15,2.0
+10,59fWFpyDg01BTEH-Hh6jdw,McDonald's,1.5,25,1.0
+11,YdpDpp130fxiX2DUdQLSqg,Bardea Food & Drink,4.5,181,2.0
+12,EROSyhoWNCUH53NrDrsHgQ,Mary's Kountry Kitchen,4.0,50,1.0
+13,Vo4NZBtF3mr6EJitNnq-Wg,Pizzeria Maki,5.0,13,
+14,xNWueX3uZjmixQUkY38GzQ,KFC,3.0,5,1.0
+15,sFtEbnWDtIADseyr8Lx6Qw,Spice N' Nice,5.0,11,1.0
+16,ulwns2OavT81v6zG-Sk6ng,Wawa,3.0,8,1.0
+17,B6zs6ywn7TfhOmmDtuWQkw,Farm a Sea Bistro & Crafthouse,3.0,28,2.0
+18,qmDm7guS7TAZTSDFYY2bug,Pizza Hut,1.5,45,1.0
+19,SkWaAf50KiN2m0zXfnAuiA,Luigi's Cafe,4.5,63,2.0
+20,D392vqhMjDPkHw1U8p66Uw,Maryland Avenue Sub Shop,4.0,15,1.0
+21,O1gJVygW6UVgKCpErmYZfw,Subway Restaurants,2.5,7,1.0
+22,ggJXlslLYndvE7n3hgJBCQ,Capital One 360 Café,4.0,5,1.0
+23,CKKY7kxtznKVzm9FBzAL4w,Little Caesars Pizza,2.0,14,1.0
+24,Q4OTSH9DaoeqtYcg6qYtZg,Subway,1.0,5,1.0
+25,OlOVRlcEstxKK_6hMjy63A,Hollywood Grill,3.5,190,2.0
+26,eNxh94Ogxwuomg7JsZu98w,Adda - Indian Grill,2.5,11,
+27,o8JeOB8HTa5HYHg6hfqTHw,Walt's Chicken Express,4.0,51,1.0
+28,7Ld1DxAhSlGSateku0iqbg,Ristorante Attilio,4.0,50,2.0
+29,7O7YHTUB3uqXHsQSLKR0SA,El Jefe Restaurant & Mexican Grill,3.5,69,2.0
+30,MZW_eTFYFBvHYg5OFqDRCA,Red Robin Gourmet Burgers and Brews,3.0,118,2.0
+31,i2qrXvLkhyG4xyRI-ddcZA,Baja Fresh,2.5,17,1.0
+32,yDiWYpuzRxcTgSi_O4JZpQ,Masala Kitchen,4.5,79,1.0
+33,ThZyytdc_kj2uBYFiSao-A,Arner's Restaurant,2.0,57,2.0
+34,uoMWvXch6sWnI9FMsE_-Vg,Cafe Napoli Restaurant & Pizzeria,4.0,114,2.0
+35,02kw1y-cUK5v_u5BaAQvjg,Arby's,3.0,9,1.0
+36,fCFUlCHG4spZ3O0vbqnYjA,Pat's Pizzeria,2.0,5,
+37,LSxmfbgcZLdQ5ai2vf2nmA,Zaikka Indian Grill,3.5,69,1.0
+38,psD0qpCK-iENFO9c8hmnkw,Famous Crab Cakes,3.5,37,2.0
+39,c4D851qxOujE5KTH8upXTA,Wendy's,2.0,23,1.0
+40,5RtAJPXFLTzwALIe1mtNuA,Piree's Piri Piri Grill,4.0,77,2.0
+41,xtbAqP_Ftb3kYJ53Hv6H5w,Top China Buffet,2.5,5,
+42,ZB2T9dwB4vhHPsJC_4eOnw,Nordstrom,4.0,24,3.0
+43,mtowE4p6gOgyGrHAsMz-rg,Eeffoc Cafe,3.0,31,1.0
+44,f9iPWhAeA_IKCF-aPcud1A,Philippine Bread House And Restaurant,3.5,7,2.0
+45,ccEgmgcc5uLJejser0UD0g,New Castle Bagels & Deli,4.0,21,1.0
+46,oS70RVt-RegY3Ts0hLASQA,Saap Lao Thai Cuisine,4.5,63,2.0
+47,N-_ilHVIMQqzkga7nHfA8A,La Tonalteca,3.0,6,2.0
+48,VMiDHHR-JHgB4ZoVluxpLQ,La Tolteca,3.0,6,1.0
+49,ixsljpxu56VCTtayIELqUg,Tokyo Sushi,3.5,17,2.0
+50,3zWNxtRhyR4rLPfXyQgSyw,Wawa,3.0,10,1.0
+51,XF86J5bJKkmueBL-PmPbcg,Subway,2.5,7,1.0
+52,OGbdvZAvSZ30l8sde9GSwQ,Mr. Pasta,4.0,39,1.0
+53,wWcETNWBnFEi1J_W_9hXJA,El Fogon De Tato,5.0,6,
+54,DAcqRGI_u8yNCcUIczfNxA,Wawa,4.0,11,2.0
+55,gTM5c2B3X2nEvYg6Jlw_EA,The Mayne Dish,4.5,25,
+56,k9W1gDPg4TziOTqY_xjTyQ,Friendly's,3.0,35,2.0
+57,hFa7UxRZgJDQJ3UBhQsu9A,Piccolina Toscana,3.5,99,2.0
+58,_BqPnypB6wPZRPbEqtKy6A,Grotto Pizza,2.5,63,2.0
+59,sKQ0KYon7eT6xEnCpb18aw,Chili's,3.0,25,2.0
+60,MmFNgQrsPrFWUx6Wr3KS1w,Stoltzfus Sausage Sandwiches,4.5,9,1.0
+61,UZkuF34Plfao49I9dylzXg,QDOBA Mexican Eats,3.0,18,1.0
+62,iCfB58Cvb_rw_SDAgPXLfA,Russell's Quality Food,4.5,103,1.0
+63,sTQZ6WHggp7pBnn7mW7y0w,Dreamers Cafe,3.0,11,
+64,citzbW-2MVEZRNBqpVO-Jw,Buffalo Wild Wings,3.0,48,2.0
+65,jVJH1KfitQi87MYMh6vyMg,Anthony's Coal Fired Pizza,4.0,119,2.0
+66,iJKOUYgigs4VYsWny6AtEA,Ciao's Trolley Pizza & Grill,4.0,77,1.0
+67,W6S482dRQ_9nCcLjfv8VNg,Bawarchi Indian Restaurant,3.5,101,2.0
+68,XYoyLbHwbBJShaZltxsAYQ,Popeye's,1.5,10,1.0
+69,7ELSYoA2CZx8UPSLrvhOXg,C & C Country Maid,4.0,10,1.0
+70,1Ye_elsSB-XjKgWAHDwPbw,Applebee's Grill + Bar,2.0,35,2.0
+71,fLeD_h6uD4yEN2ciI08RiA,Bubble Shack,4.5,97,1.0
+72,JaHuWM3Tp1aG7NW66mhutw,McDonald's,2.0,6,1.0
+73,5IFqqWJTaPNoY2ZgRlX73w,Cafe Verdi Restaurant,3.0,44,2.0
+74,MTjS4g__WMgA-PPMjCL4fQ,Popeyes Louisiana Kitchen,2.0,21,1.0
+75,19fHbf0qzihtEtXQZ2ntww,Walter's Steakhouse,4.0,73,3.0
+76,ScXJHSCceQao6K87VK199Q,Mona Lisa,4.0,18,2.0
+77,8zJsbIVBXDoGaEmQNicjdg,Fusion Spice Bar & Grille,3.5,7,
+78,Y4eaKcLP0hCIfvhknOT4uQ,Crossroads Restaurant,3.5,103,2.0
+79,5cvVmZYhYr1P0ot0ed2lJQ,Riverfront Bakery,4.5,32,
+80,oQcV39W4ApVURMAXd7qhzw,Masala Kitchen,4.0,32,1.0
+81,dsglOxl3QNlMzidRhZ4NWw,Papa John's Pizza,2.0,13,1.0
+82,O7vMyd_Lg2-1DTW8VPFwcQ,Three Countries Pizzeria,3.5,13,1.0
+83,8k3m4HBZB0h--N98bV4j8Q,Chick-fil-A,3.5,18,1.0
+84,VHJBGikBqXpdc6mc7qtQ8g,Simba Tropical Grill,3.5,7,2.0
+85,gdV2mdEGR_kPA9EW6r2Qeg,China Inn,2.5,7,1.0
+86,ilriW8ywq5HFs56Ux8pftw,Ciro Forty Acres,3.5,36,2.0
+87,hAV6BW2gfdtbDhxeBJUvIQ,Lucy's Pizza & Restaurant,3.5,27,1.0
+88,MkYu8dMDQFX830cIqMo90Q,Old Country Buffet,3.5,40,2.0
+89,pp79bmyve2egmM1_9Rh9Fg,Margaux,3.5,16,
+90,Z5gHx5r8Amn_LB4eNSJs_A,Adobo Alley,4.5,39,
+91,wlzn5BhVMS2Kz3BYcTZIRg,I M Coffee,4.0,6,
+92,sHRfeIQg6FMhjKkiNfaLgw,Captain's Catch Seafood,3.5,12,3.0
+93,fd_fNaeZxcZfUza3K6Be9w,Marias Pizza & Pasta,4.0,12,2.0
+94,N-EQ9UDuFHT9RyC1JFX5pQ,Pete's Pizza,2.0,36,1.0
+95,yQFHhWKAr2f8LNQvq-8NxQ,Brown Bag Deli and Grocery,4.5,6,1.0
+96,NBPOJO1QZE_65BM4qmQahQ,Golden Castle Diner Restaurant,3.5,12,1.0
+97,4VGEq2AHUw3uP2L51S8raw,Cafe Scalessas,3.5,7,2.0
+98,XOOsIjiMVQYB3An7z89Mnw,Piri Piri Grill,4.5,6,
+99,TUU1mt51yasYH0QYwzKTEg,Pachamama Rotisserie Chicken,4.0,61,
+100,1C1zjPi4rYwgGr8kD-1pwA,Panera Bread,2.5,47,1.0
+101,QrCC-AbRjY8J0jw-aBcotQ,Wingstop,3.0,8,
+102,G01vpgoEWyYxESzZEij5sA,Five Guys,3.5,55,1.0
+103,koYe0Xt78lAigCvFRiCw8w,Zoup!,4.5,76,1.0
+104,yn57lTycvUvogODsFEyWVQ,Palace Of Asia,3.0,61,2.0
+105,LdGu5XlzAX0XalxAUMMdwA,Kuteer,4.5,13,2.0
+106,tvlElS5cQ6YVEVOb34ujqQ,Coffee Beanery,3.5,9,1.0
+107,HurD0KDmuuHVNnh1lGb_OQ,Dragon Cuisine,3.5,15,1.0
+108,cbfQNOgUYCu3Isfa6icYgQ,El Patron Restaurant,4.5,18,1.0
+109,hrPLZ99KVPz_7yxZVfc9kA,Applebee's Grill + Bar,3.0,37,2.0
+110,E55sNGuWYTRlH3r6_5OlOg,Domaine Hudson,4.5,150,3.0
+111,hF-Ndu77yzspMkDZv9bWzg,Carmen's Kitchen,4.5,12,1.0
+112,uH_nXWJn51aHspawHb-GBA,Rosenfeld's Jewish Delicatessen,3.0,30,
+113,41lJbk2WXU3R0GKDKxRFPA,Himalaya Indian Restaurant,3.5,11,2.0
+114,H2HZ5Rz01L2xLzjJR8sQ-g,Chick-fil-A,3.5,23,1.0
+115,8vvMGaJ5biveUVE6-yTipQ,FireStone Roasting House,2.5,132,2.0
+116,sTvFxzQU_4bm-owSJXx0MQ,Cromwell's American Tavern and Taqueria,3.0,94,2.0
+117,p_iyQ6Mo33ZbGS5k5_bTng,Burger King,2.0,11,1.0
+118,qFsh80AAL90tkOc0n98bqg,El Diablo Burritos,4.5,303,1.0
+119,-AxGGm4yvhedkmN1glW1Xw,Ming Kitchen,2.5,14,2.0
+120,jpEhAUyitrgwDatsgeBgXg,Bangkok House Restaurant,4.0,76,2.0
+121,shIAkjO9IFa4yTM5EENPTQ,PureBread Deli,4.0,41,1.0
+122,OpUoLGa5NwOzuPutIAa1vA,Hyderabad House,3.0,59,2.0
+123,h3DUMo4oWyVQ9ZfGar6vPg,Harry's Savoy Grill,3.5,204,3.0
+124,KnXW9AQKAlGmQ9AU_77B5Q,Asian Kitchen,3.5,9,2.0
+125,nrlYIT438hkDub2ifE8DHg,Mr Wish,4.5,21,1.0
+126,JQ__Ee1Uuw8bWUu8E2CjBQ,Hong Kong Chinese Food Pick Up,3.5,37,1.0
+127,edFDP6O_R4n9BUXDMFqApw,Jake's Wayback Burgers,3.0,16,1.0
+128,VVqQvn29cQ2LZXJ_9rPa-g,Celebrations on Market,4.5,7,2.0
+129,uyXVm7lhbR26t5Jy20VYPg,Bertucci's Italian Restaurant,3.5,78,2.0
+130,Nvy1jETQItFjG0oyjpGk7w,Farmer & the Cow,4.0,247,2.0
+131,AjxhKYSbc1NrGOxAcqxb9w,Biden Welcome Center,3.5,216,1.0
+132,52RFRa6UlbIxy8EnWJQpjg,La Tonalteca - Christiana,3.0,91,2.0
+133,_ju1BXAF5g5QtAFfZZKO1g,Brew Ha Ha,4.0,80,2.0
+134,IugPZVHmgdGvOmNVi07ueg,La Tonalteca - Hockessin,3.0,36,2.0
+135,f4ykOH9Z-87b2l3Ea4HDPA,Hooters,2.5,37,2.0
+136,MIK2lBW3eFpPcy0vKxPS6w,Bugaboo Creek Steak House,3.0,51,2.0
+137,FGPFf3cZ0djSKNXNDY8IqQ,ShopRite of Brandywine Commons,2.0,42,2.0
+138,sX_vxWQuZu_EA1bkCX95Yw,Tonic Seafood & Steak,4.0,122,3.0
+139,mtXTk0-IRTS8d0w16ihRPw,Dunkin',2.0,5,1.0
+140,ucDPodtTLX7LHZnigGRa4Q,James Street Tavern,3.5,37,2.0
+141,LwXkXDdsu1yWWcWAbt2fYw,Mazzella's Italian Restaurant,4.0,151,2.0
+142,Cv4QFI1gGGrgRSVnMU0qug,Olive Garden Italian Restaurant,3.5,67,2.0
+143,PHaAnZO3jkJeVaekf2zT4A,Boston Market,3.0,12,2.0
+144,UtVv2dVuHqpaJqnRwismiA,Steak Works,3.5,24,2.0
+145,Il3GDb6A7rGSYdt89Wb0Fw,Paris Pizza,3.0,32,1.0
+146,QpQ8CxC14jnNOdb7B2R6zQ,Uschy's Cafe,4.5,12,2.0
+147,CZ2KPQtt0ah0up00YK0Ypg,2 Fat Guys American Grill,3.5,69,2.0
+148,-eJJKj0ClOvumIYksYSdcQ,Puff Daddy's Sandwich Shop,4.0,5,
+149,081vVr80-uscqGGaFAxKfQ,Goat Kitchen and Bar,4.0,198,2.0
+150,1DCPuF0_VZNLRvHEAVJJng,BellaVista Trattoria & Pizzeria,3.5,29,2.0
+151,zUMbBbxlBY0_hbAclEwDmA,Panaderia Y Taqueria Lili,4.5,8,
+152,UXJEQycac7JKyyTVDjWBdA,California Pizza Kitchen at Christiana,3.0,79,2.0
+153,HsCX4E7_k-XXS-1iTz17CA,Go Vegan Philly,5.0,21,
+154,W6Nc9Lt4n89sEBXqpCIGrA,Pat's Pizza Hockessin,3.0,14,2.0
+155,Z_xbp4N5MDssZxdUohybTg,Main Event Newark,2.5,140,2.0
+156,hBmWWvU6BSL6i_eYapOFGQ,The Greene Turtle Sports Bar & Grille,3.0,73,2.0
+157,YJgLVtH4IFzRTrlvTO2_Cw,Christa-Bell's Caribbean Cuisine,3.5,12,1.0
+158,G1M1OJmxp5dPY3rRYpl5WQ,Bob Evans,2.5,42,2.0
+159,jfv6PEdL5KchI-DGJlnbWQ,Dunkin',2.0,5,1.0
+160,ExwZRGJcZ7eMfFalfQjhkg,Govatos Candies,3.5,14,2.0
+161,w0RHRKHj9g2G3H5LcrOiKw,Scratch Magoo's,4.0,80,2.0
+162,RzuUOVjXuyG9b8DctqAgFQ,Wendy's,3.0,9,1.0
+163,ujUb29BOYcUyhMcnqo4bWA,Two Stones Pub,4.0,328,2.0
+164,Vy9VN70aRpIe4yEo55VrWQ,Cafe Riviera,4.0,59,1.0
+165,ULrDH5eEndkbALvYEBhrHw,Party Pizza,4.0,26,1.0
+166,2CCPRNXRO33sYuotGG7MqA,GARRISON DELI,4.5,7,
+167,-ShzgoeH2nvGG_TlNfMz2w,Morelia Mexican Restaurant & Bar,3.5,69,2.0
+168,t1KiSVmxADW1LaxA2Wtj9g,Dreamers Cafe,4.0,32,1.0
+169,jrNAkn21Tjq3n9v2n3m46g,Grapes Real Jamaican Cuisine,4.0,11,1.0
+170,uAlZsR2u3sArs6vuuHl0mQ,Augusta Grille,3.5,5,2.0
+171,0XXZSQpSbcbL1i4iK-Ohiw,Embers,3.0,16,2.0
+172,QfaobFtkXhyTirLQLkV82w,J & C Cuisine,4.0,29,1.0
+173,2ojUHZ_5H8_S0vh-rXpPfA,Hot Spot Pizza,3.0,20,2.0
+174,b8yPm2F9dHjJLu5NF-lneA,Ameritage Bistro,3.5,8,3.0
+175,k93U5RS4ohNqk9912QcyOw,Capriotti's Sandwich Shop,2.0,13,1.0
+176,gfIj5FvIejEiex4WV04wIQ,Ubon Thai Cuisine,3.5,199,2.0
+177,e1o-2If3E-OY2A_yvamrIQ,Eeffoc's cafe,3.5,6,1.0
+178,Pn9_MnhoLrMFdW3AZDORMQ,Lucky's Coffee Shop,3.5,233,2.0
+179,MyNFSdduvVnfeJu5sQfFLg,Giovanni's Place,1.5,18,2.0
+180,hZVzFdmKqFDPHleovfGnPA,Jerry Deen's Family Restaurant,2.0,5,1.0
+181,H0tVJV7M5lb0bE5vDZd6KQ,Pho Son,4.0,43,
+182,OJUTu1PAPjljZBwtI5DUdg,Deep Blue Bar & Grill,3.5,52,3.0
+183,W_M-QaSW2y2JfUDRfOZ4-Q,Gallucio's,3.0,37,2.0
+184,OEMBtqjWgHvLOCIjhY_7eA,Sang Hing Chinese Food Take Out,4.0,21,1.0
+185,PhPokNCiFVdOx8BsdPnqeg,Manhattan Bagel,4.5,12,1.0
+186,zj8HThbzTWvXl7-Dw0_nsQ,Añejo,3.0,34,2.0
+187,zz0l4dUf28wzPAaTdGqsSw,El Pique - Wilmington,4.5,173,2.0
+188,yzQvpMF2HFZrK4ZL3vV5Ig,El Maguey Mexican Cuisine & Bar,1.5,6,
+189,SYcdJP123caYVCkZ27BIOw,Southeast Kitchen,4.0,239,2.0
+190,BypYxOw7LRO8zjFMxRWdDQ,Pret A Manger,4.0,8,
+191,mskYyOH-xVyBlBn9OLqu4Q,Drip Cafe,4.0,241,2.0
+192,3P-5sAQoAyKcoO5e4paG7Q,Little Anthony's Pizza,4.5,45,1.0
+193,-G0iVQaYvpZETVKwPVdR9A,Crab Du Jour - Newark,3.0,68,
+194,58OuqehnPxdFq8gWR_hBRw,Milk & Honey Coffeehouses,4.5,9,
+195,m7gW3sfkxmIeW3dz5XTzTQ,China Dragon,4.5,11,1.0
+196,-zngCcpYYPNXEfwv9NJsIA,China Express,3.0,9,1.0
+197,AVYuQ6DTqpqsB141r3lH4w,Hibachi Grill & Supreme Sushi Buffet,3.0,83,2.0
+198,lxWMl4ejGvFmihN-qSTNXw,Uncle John's Smokehouse,4.5,13,2.0
+199,gRHfRxTqaf_oUapIB9MMUA,Cosi,3.0,8,
+200,w2LKdmH6Ytez4ptNdO0Vuw,Pizza Hut,2.0,17,3.0
+201,sd0AA8okoNnR7ONkF9AWvw,Cuzino's Pizza & Pasta,3.0,41,2.0
+202,TYgc71FqGLGiROceq4TP2A,Admiral Taddy's,4.5,12,1.0
+203,_I4a0zwTEJsvbLVqM5cS_g,Karribbean Delight,3.5,15,1.0
+204,qljraKzqFlIONICsRtzSnw,Miller's Ale House,3.0,143,2.0
+205,ML0D_20SZv-Xz0ST74qkuA,Jing Fong Restaurant,3.0,19,1.0
+206,sl3Lm8ZNuY_oIop0ZFRzuw,Pizza & Pasta,3.5,19,2.0
+207,5Vp6Pz3AVcqbyDj1ynKOTA,Blue House,4.5,6,2.0
+208,tuKYmeiSkAURPQnRDCLBxg,Rivera Taco Express,4.5,42,1.0
+209,Ixr2-GfYKatXdq1rZnfHiA,Ruby Thai,3.5,22,1.0
+210,wkO1a_i1Mzpd-0sbiLa7EA,Little Vinnie's Pizza & Pasta,4.0,56,2.0
+211,4C0xj95V8-Mp14OixoTUZA,El Maya Mexican Grill,3.5,74,2.0
+212,PtVJoVOcsll8TP2HnArLsw,Tyler's Bar & Grille,3.0,80,2.0
+213,UxP1VK4lTLKRu9cgjGhdaw,Brew Haha,4.0,26,2.0
+214,ijJLd8VHB-vPLWmHyyELYQ,Deerhead Hot Dogs,4.0,37,1.0
+215,pkNffAUPpdKaUuUUbhzLmQ,Philly Pretzel Factory,2.5,11,1.0
+216,5hID2DruRwIwit0BcLHTaw,Dunkin',2.5,9,1.0
+217,uMoHJJg3zFNjh09WxN8HWA,Taqueria Atexquita,3.5,5,
+218,6Ks2A_uQSvMrDa9_wl5aKg,Sunset Restaurant BBQ and Crabs,3.5,15,1.0
+219,4WAgExw8IOQ_mcN1DUy4Iw,Benjamin's On 10th,4.0,13,1.0
+220,Co47eJ287hxR-9iqhnswcw,Twisted Soul Restaurant & Bar,3.5,44,2.0
+221,DNvMHI_X3PEi9vTmMHO0Yg,TGI Fridays,2.0,75,2.0
+222,3VZsvccKrkvmBshoAFrgGw,Dominican Cafe,4.0,14,1.0
+223,SUththHA3pfnkQT3Tu27IQ,Pat's Pizza & Pasta,3.0,22,1.0
+224,nNKZXzq3kT71E6R3JX9RPg,Grotto Pizza,3.0,71,2.0
+225,KrJcaM7Fh-NClOIXfB-s4g,Espresso! Coffee Bar,4.5,5,2.0
+226,ctppPuguEKktu2X7SaOf-g,Wendy's,3.5,7,1.0
+227,VlzexKYF6St7-N4tAoGBqg,Pinang Asian Cuisine,4.0,142,2.0
+228,7ABcgM9T7SD7H_-MLy61MQ,Riverfront Market,3.5,21,2.0
+229,RKgn1CwGm8FCH0hKOTDG3g,Vinoteca 902,3.5,14,3.0
+230,TdLZpW0GG0NXsBjtX_SlRg,Hibachi Express,3.0,21,1.0
+231,vMWBVI5ky6c1gfuPB7ZTLQ,Urban Cafe,4.0,17,1.0
+232,NQkqbnHOPwvaBGdhP_03qA,Doc's Meat Market,5.0,8,2.0
+233,7VrD6atyAIOPJAEdAvsA1g,Capriotti's Sandwich Shop,3.0,55,1.0
+234,Hx8DHtPTRq-Qa98fRCTofA,Burger King,2.0,15,1.0
+235,HBuQAJvypwNerylr03XqQg,Tokyo Express,4.0,53,1.0
+236,gAiAwgSFAzT2yFXyL6dVcg,Moe's Southwest Grill,2.0,46,1.0
+237,T4RdefWsIRfo_36Bv8X15g,Dunkin',2.5,8,1.0
+238,Te4yTJ7blab4s_JTAF71Iw,Sakura Japanese Sushi Restaurant,4.5,178,2.0
+239,b9cdwGoH4oetEYA5b1YpDw,Limoncello Italian Grill,3.5,15,2.0
+240,nUwlAKUoxCJb3SDAxpymbA,Mimi Teriyaki,4.5,14,
+241,ByD67fU4LfLkNMpMZXdAYQ,Zoes Kitchen,3.5,63,1.0
+242,5vNalmeJRlPQR0HGfyCq7A,Café Valentina,3.5,54,2.0
+243,enWMHykIbIYAX1ChWQURZA,China Inn Restaurant,4.0,16,1.0
+244,fmM5dA09gigXH0nCb9nEvw,Casa Tropical Latin Cuisine,3.0,11,
+245,qzNMDrjffJGMa1TVgmdS0g,Nicely's Jamaican Kitchen,5.0,12,
+246,pWIO8FCZqnPxTwt7lURk8w,Smiley's Diner,3.5,80,1.0
+247,YCfMNP_1YCTXTKlrnw44vQ,Brandywine Diner,3.5,59,
+248,1XJ1kOixnDEfnTrRfyjUiw,Delaware Taco Festival,2.0,8,3.0
+249,JEpsrFGIH4ixJJ4q2yUb_A,Godavari,3.5,161,2.0
+250,pvwdXO69MQKeAEFwcISnFA,Kabob On Wheels,5.0,60,1.0
+251,FJSIOZotIVrgvqMuBQ7y7w,International Super Buffet,1.0,7,2.0
+252,kMVROdQZoNoQBmvvpe78LA,Al Chu’s Sushi,4.5,14,
+253,IZMHmGH1NbULyreLPx3t9A,River Rock Kitchen,3.5,56,2.0
+254,Qpyp_qwSCxb6a0PsLcJnwA,Redfire Grill and Steakhouse,3.5,99,2.0
+255,01ikDdFTvc2-YXeyv-YXjg,Two Stones Pub,4.0,158,2.0
+256,Z4S1pssoLucE1DT7aervXQ,Fuddruckers,3.5,75,2.0
+257,yih0BSPRXzPlc8qVNlYs-g,Romeo's Pizza & Restaurant,3.0,15,1.0
+258,K6SQfxBapNAIVr_C73ohlw,Rasa Sayang,4.0,260,2.0
+259,zVagjsscMqU6ztrFvv6hOg,MrBeast Burger,3.5,7,
+260,953cL2plLpQtabKer3r9aQ,Catch 202,3.0,59,2.0
+261,P6DfeEXFpV_Z6RJRMZ6oXQ,Domino's Pizza,2.0,15,1.0
+262,rBYX6kKsDt24uFdyAEs5iw,The Original Hot Bagels,3.5,14,
+263,yBfY-xIpN_OmxyXfoX0bTQ,Einstein Bros. Bagels,2.5,39,1.0
+264,ifGlDvwm_6ralFBNb35Bkg,Panda Express,2.5,12,
+265,lNi997C0gpQMlKW4LIIdrg,Arby's,3.5,14,1.0
+266,PMv1-zywWOnHcmvcnB30HQ,Legends,3.0,19,3.0
+267,B8oETYiwY33NGixjU6Z0oA,Chipotle Mexican Grill,2.0,14,1.0
+268,SWrUyOkijbZPp6If7UMzjw,1000 Degrees Pizza,3.0,32,2.0
+269,5L918sNOVHcCJKZ7RWATBw,Washington Street Ale House,3.5,238,2.0
+270,RubysERTZxfYrkkzgYOlXg,Eppy's Authentic Bar-B-Que & Fried Chicken,4.0,7,2.0
+271,CLUKvU_lTOcCQi6_24lzOg,Bonefish Grill,3.5,138,2.0
+272,r19qAeTxkc-aes2UVt9v5Q,Pizza by Elizabeths,3.5,65,2.0
+273,R5yCU9dJnGcXw3voSB7pKg,Del Pez Mexican Gastropub,3.5,290,2.0
+274,Wy3s-xxiqZBg5Y1eSzI2DQ,Tex-Mex Burrito,4.0,27,
+275,1MiuGnBgT6beHPfTJiCF7g,Zaikka Indian Grill,3.5,6,1.0
+276,b9bzEYHseU0ceo7-0XaXqg,honeygrow,3.5,61,2.0
+277,lm-KtpMuHoPVCkC7zpr_xg,The Perfect Cup Cafe,3.5,97,2.0
+278,i0Q1qSWUsyMJcbcTNJBtIw,Manhattan Bagel,4.0,19,1.0
+279,WroosnY3U0t_Lg1U_3s8AQ,IHOP,3.0,60,1.0
+280,YxRqBrepifOBU7KO4b4BDg,Ernest & Scott Taproom,3.5,119,2.0
+281,eZV80xPOehww63KQWdrviQ,Mazza,3.0,8,2.0
+282,lqMOJ_cVSvVU-lferJVPLg,La Pizzeria Metro,4.5,94,2.0
+283,8MzZuGJVuA_HzzQ-QKDpTg,Tandoori Restaurant,3.0,21,2.0
+284,4To3eljiM2DlF-D7Fih8iQ,MidiCi The Neapolitan Pizza Company,4.0,84,2.0
+285,yTVTy75PHthgHH1ZcGVbZg,Mrs. Robino's Restaurant,3.5,188,2.0
+286,kFx4Nq2WhoIlCx7Adrzo8Q,Señor Tortilla,5.0,16,1.0
+287,TlaXeIvS_0yQhjWTLHCLSA,Sciarrinos Pizza,3.5,67,2.0
+288,lwJllJ5e4CLHdliOPEfgGg,Rice Restaurant,4.0,138,2.0
+289,Wj2Rb6wGmejjYuZgRpNuNw,Nirvana Fine Indian Cuisine,3.0,124,2.0
+290,CUckmG16ZfLaLogSDlSNYw,El Cantaro,4.0,5,
+291,YBZHAr2Psvh20BZBv7o6cQ,QDOBA Mexican Eats,2.5,26,2.0
+292,DZUZbsr-a_59zjjPY8rGKQ,Stitch House Brewery,4.0,160,2.0
+293,3qRDGcBOcfFnEfAzVLO6oA,Luigi Vitrone's Pastabilities Restaurant,4.5,49,2.0
+294,J1VMww2sKmYVWETGXR63_A,Delaware Saengerbund Oktoberfest,4.5,14,3.0
+295,QqN7cWY8DerAsL7kW01UcQ,Blue Parrot Bar & Grille,3.0,46,2.0
+296,0MivygP7tD4AWbskqYmMuA,Taverna,3.5,56,2.0
+297,FNufNXHffHXRUhIqXWNoCQ,BOBO's Mediterranean Grill & Buffet,3.0,11,
+298,UI396ToWHWXcDmILMclWcg,Cantina di Napoli,4.0,33,2.0
+299,3N38Hwxvx2Azb2hyLb1vxA,Golden Dove Diner Restaurant,3.5,88,2.0
+300,_7EnH5l_oCZyu407yuvNEQ,Tacos Mexigo,3.5,26,
+301,VcwdSsoGhQAwo7Th3MWBOw,Los Taquitos De Puebla,3.5,40,2.0
+302,C-rxRVvEs7VrGUwMSngxvA,Domino's Pizza,1.5,13,1.0
+303,j1e3-hZkEX-mnxuujdKQig,Grand East Buffet,3.0,85,1.0
+304,UBX73ZWgCdgom4nv0UeGvg,Border Cafe,4.0,742,2.0
+305,XWDbA6RFVBBLjPps-f47Cw,Pasteleria Rojas,3.5,5,
+306,-KugJyLmuTECAE121jsCkg,Charlie's Pizza,4.5,39,1.0
+307,-F-30mTCP0dUr_mm57NxUQ,Makers Alley,4.5,12,
+308,ZraQzfGJfnVMbMXZwOQ7Vg,The Chicken House,4.5,78,2.0
+309,MPuoLAmmBvijfXC7JEUsFw,Evergreen,3.0,7,1.0
+310,-PuFGEYEx1wPjqoxfE_k4Q,El Diablo Burritos,4.5,23,
+311,UXHJCBnu6Ruh4SjLBOyaAA,Walt's Chicken Express - Carpenter Station,4.0,12,
+312,F4cyfaD-SIg2N8r2xIiWjg,ACME Markets,2.0,6,2.0
+313,Y9wxA_5Mwnax3dTLTXxEZg,De La Coeur Café et Boulangerie,4.0,32,1.0
+314,FAvUlfYblxOf6FA4eO-qnA,Rascals Crab & Seafood Restaurant,3.0,6,2.0
+315,h2TLKm5xuRttX1NJUoYurQ,Casa Mariachi,3.5,8,1.0
+316,VNf2NwMjjcYVBWGGMigTtA,Jalapeno Grill,4.5,56,2.0
+317,g1o1XGR4vA85paP6G9S9DQ,Prospero's Pizza,5.0,11,
+318,dAYsDKMHLR3eZqn1CP5oJw,Latin Fusion Restaurant & Lounge,2.5,27,2.0
+319,6zLeYObKM9K4aFcSrhbz_Q,Mom's Pizza,3.0,19,2.0
+320,J4Lj1Mag6ODDmP0kuRnEZw,Cafe Mezzanotte,3.0,63,2.0
+321,icydX8ke3jYeam4yL3ap4w,Gallery Pizza,3.0,10,1.0
+322,QgJv-WSd5IdYTYIaS_RRxQ,Mary's,4.5,34,1.0
+323,FjgPNVFrbL924rNUMm8nBg,Jessop's Tavern,4.0,258,2.0
+324,Eggbe8TRDB0wPjqymWMk9Q,Dunkin',3.0,7,1.0
+325,QZjoE2z7MwKZ8JvzUNzGzw,Everest Indian Grocery Store,3.5,14,2.0
+326,g49GSuIxGFz0Kr9b9qXqJQ,Sbarro,3.5,6,1.0
+327,Tz36ybiNcF6X9wxEFZ4J4g,Royal Farms,1.5,18,1.0
+328,jVJdCT5lD-DT0LuH1OGVNA,Ruby Tuesday,2.0,9,2.0
+329,F0hePnZFn1Da5bQ-GO5tfA,Omega Pizza,2.5,16,2.0
+330,Ve1V5bBuUCz_aB0K5s0x_w,Milano Pizzeria,3.0,18,1.0
+331,Y4nL9U-1fJmGAs5iTlSIXg,Sunna Juice Bar,4.0,11,3.0
+332,r08CGs3hygzCtBcmZYpZsg,Jae Seafood by Tommy,4.0,42,3.0
+333,65024MqvGVwOvseDL8l_-w,The Juice Joint,4.0,14,
+334,yK8LWJ4VRTYEoGxVYzcjQg,Metro Diner,4.0,381,2.0
+335,3dn-FdMoVBfqkH3SEgecxw,Country Maid Stores,4.5,9,1.0
+336,gtOVX8hGKKIryQs0lGPt3w,Bawarchi Biryani Point,3.5,53,2.0
+337,ACVar6kJC_P2aDHDBx6N_Q,Pinji's Cafe,3.5,10,1.0
+338,4EffIBpRHXJP0mNZeRAYvA,Pinji's Cafe,4.5,33,1.0
+339,hFMud7XDefdWM1d-p1B2dQ,Bahama Breeze,3.5,215,2.0
+340,2-yrFS9sCxyKPfr6CnHmTw,Oscar's Famous Pizzeria,2.5,23,2.0
+341,_wm4lnfN_vWSuXZH3gXq9Q,A Pizza History,3.5,12,1.0
+342,Wbq1ioousibK88FRw3PlDA,Bain's Deli,3.5,15,1.0
+343,qwoqt5912WOdHHOtoMUF1A,Ny Gyro & Grill,4.5,15,
+344,0y5x2QxXdeHvs_m0hoO84Q,Aureas Mexican Restaurant,4.0,72,2.0
+345,gemfdRJabGzAqfD1oLLC_A,Horace Shellhammer's,4.0,149,2.0
+346,myAaXOSoxfaNnCPTcV4M8w,Burger King,3.0,5,1.0
+347,9i784uctK0-_omQcdCcgWA,Barcelona Pizza Pike Creek,4.0,6,
+348,qeBhpLwPn8KZJoHPPSH-sg,Nuyorican Pasteles,1.0,13,
+349,0HzjYHjeL5GvGHMj9XjO5A,El Toro,4.0,59,1.0
+350,jCyQknyt1mkMTBw60-ABUw,McDonald's,2.0,32,1.0
+351,_LoYXMFxkbmrpAP74d81Dw,Tropical Smoothie Cafe,2.5,12,
+352,ylkgMTVWMvliW9x-XlbjvA,Famous Dave's Bar-B-Que,3.5,51,2.0
+353,kvb0a9FiFs9UXWxE6q-5DA,Naaman's Pizzeria,4.5,34,1.0
+354,Qp_6nULBg80xhx8ksMYAHQ,Utage Japanese Restaurant,4.0,5,3.0
+355,ajFL2FsdDZQwwpiOVeh1nQ,Pomodoro Restaurant,3.0,10,2.0
+356,-PTWFicakClBDK-zyQ5hjA,First Watch,4.0,166,2.0
+357,uPngSFlKQmQT3v8h8aTwmA,Luigis Pizzeria,3.0,25,2.0
+358,ERov0fZxnWhM-2GYFY2i9Q,Unique Chinese,2.5,20,1.0
+359,xHi_onbMgQqj86HFfDiqsw,Royal Farms,3.5,9,
+360,I3yzZhtKfRMuUHWHDBqHGA,Capriotti's Sandwich Shop,3.5,46,1.0
+361,v1VKIvac73Fxt6BMiuKiTA,Lawerence Pizza & Restaurant,3.5,14,2.0
+362,HQdoy8OpEuGKM_Op-ovHFQ,Skipjack Dining,4.0,109,2.0
+363,alM80dgR9izB_svltTw1Nw,Argilla Brewing,3.5,148,2.0
+364,YkL_44nF4_jUDm3cyq5SJw,China King,3.0,19,1.0
+365,rl77SOSsmY-jklKpTm3jWw,Public House Wilmington,3.0,23,2.0
+366,NlkFNuYkreoPvrThNQEvbw,Docklands Riverfront,3.5,72,2.0
+367,EUTf-d0OVBMyPkg3lObG6w,Famous Famiglia,3.0,7,2.0
+368,X0lMkTXVs3PLcyKzQ6GTcw,Maiale,4.5,65,2.0
+369,JogSG9qSX7rRN1qioMhYeg,The Ice Cream Shoppe,4.0,11,1.0
+370,DXdqMi16GRc7oMUSFmjIfA,Kidds Chicken And Waffles,2.5,5,1.0
+371,IZgQel8rfyLY8r69GtnUQg,Ike's Artisan Pizza,4.5,8,
+372,adVbOEChtDwsLF6k_Quczw,Country Maid Deli-Jack's,3.0,13,1.0
+373,-eKoPT80NewUNc2h-hevdA,Harvest House,4.5,46,2.0
+374,qCVbvgYjJkdsrSN71Ra0Ew,The Crow Bar,3.5,27,
+375,hJ0QkeOdQ5y7MTmdR9NO1Q,The Copper Dram,4.5,56,2.0
+376,TU3rjb_t9OVLoxVJpwEhwA,Sheraton Suites Wilmington Downtown,3.0,82,2.0
+377,T3zMecCY619BrWOg-fi7lA,Extreme Pizza - Wilmington,2.5,69,2.0
+378,hN4B1kS8J5MQykKxrYXB_g,Wheelys Cafe,4.5,10,
+379,aAPiZY_6_xb2qSMs0ABBpg,Tasti Thai,3.5,124,2.0
+380,2ZaldC7ird5-K9sSvK6tIw,Chipotle Mexican Grill,2.0,36,1.0
+381,aiJg1ucX4IoeWFwKTNZcsA,Boston Market,3.0,10,1.0
+382,yfKe5Ne8oo4jEBXiZvr__g,Hak's Restaurant,2.0,6,2.0
+383,rwPdi2Ept5LcVYIRUjj53Q,Angel's Restaurant,4.0,38,1.0
+384,BKVwN2btBPovpWis42Urlg,Kozy Korner Restaurant,4.0,48,1.0
+385,DZG3652AxmIUGmlF-hg3mw,Bertucci's Italian Restaurant,3.5,67,2.0
+386,pOQGEGN_UrH8rtKea0WKRA,Tropical Smoothie Cafe,4.0,26,
+387,UgdwL5wCdaFe84wmXmwaFg,Minato Japanese Restaurant,3.0,9,2.0
+388,qdKCj1XsTCgTql1iuPB5lg,Marsh Road Diner,3.5,92,1.0
+389,a-YvWwzkAd-w6VWsW0sEhQ,Jimmy John's,3.0,15,1.0
+390,Jmk_N22L1iQ6-EZIlexqag,La Tlaxquenita,5.0,7,2.0
+391,qRB4CzTnQy6iOO4D1FT4kg,Two Cousins Pizza,3.0,60,1.0
+392,Yh0HF45_lVXa6gSSKsJY1w,Jimmy John's,3.0,16,1.0
+393,JCXcdCGpqIRXEGzhPukdsg,Porto-Fino Pizza & Restaurant,4.0,38,2.0
+394,FyPqFGQXuX7Jkrjm6LoC0Q,Great Wall,2.5,20,2.0
+395,Y8iVXWq_C-U3POZ6yItw7Q,Chili's,2.0,57,2.0
+396,4Co0fjkcBvNpUY1z-tg67g,Mrs Snyder's,4.0,7,
+397,2XEXr1Ba8V8qN4IGADNliA,Kukurukoo Express,3.5,12,2.0
+398,WM18UYsMn4EOwc1s1cCoAg,China Inn,2.0,6,1.0
+399,ElEbumta2ujV9PTx4OGbVw,Columbus Inn,3.5,144,2.0
+400,gu4TEXWfC69ZVrKDsVPtKQ,Chaiyo Sushi and Thai Cuisine,4.0,36,2.0
+401,z-2pRvQXAWqcZdLW2fKj9g,Deerhead Hot Dogs,3.5,20,1.0
+402,NXYydDGZuz3p2AGg4puqig,Cuzino's Pizza & Pasta,3.0,13,1.0
+403,FYOPKSHyRVYwqjNayJdIPA,King Garden Chinese Restaurant,3.5,33,1.0
+404,-6eomXaFuOSKPsUbk2A3xQ,The Crownery Chinese Restaurant,3.0,70,2.0
+405,yFxxhrdtDfmNF4xcXeem8A,Takumi,3.5,193,2.0
+406,vep5L_9i_xFaCm2bZvQemg,Days Inn by Wyndham Newark Wilmington,2.0,18,2.0
+407,UWQn01BHc7jJnjDx6y-n9Q,Boston Market,3.5,12,1.0
+408,reHlvRPArBEo4RatrXZQNg,Bella Italy,2.5,15,2.0
+409,8IazNnZkqYlNODBZPS1CGA,Wawa,2.0,7,1.0
+410,_ZG6xLrZ7VIfcQS_tl0Mpg,Cotti's Pizza,4.0,11,
+411,Qz6-OxFp9PhGwMZG5geqpw,Touch Of Italy,3.5,158,2.0
+412,L-NBC1etnxAvHP_u2xo4Ow,Moe's Southwest Grill,2.5,46,1.0
+413,9pPK-EhpT9jkC7WXdtDM-w,Seasons Pizza,3.0,46,1.0
+414,iWyYWFXrOvyoxIvUPf8OuA,Opa Opa,4.0,119,1.0
+415,P_nqb7lULOtx3pAJbKfFXA,Santa Fe Mexican Grill - Wilmington,3.5,74,2.0
+416,sRJFxyCjZnmXuZLk6uKW6Q,Panera Bread,2.5,35,2.0
+417,cVWOVdiHpPRzuS2FSQUgfA,Omka Grill & Sushi,4.5,20,
+418,3omPdJWZzRAaNZU4vaovZQ,Food For Thought Catering,4.5,10,2.0
+419,S_i39mHBCZadtvwdC6Hb6Q,Seasons Pizza,2.0,19,2.0
+420,mcmOeaoHlryrtogjd3tooQ,La Fia,4.0,177,2.0
+421,DvKVx_Em_UkG2NPeeKSJzg,Sitaly To Go,4.0,23,
+422,NTlF55qiq2TCxR_2Kr4NAA,Star of India,4.0,44,2.0
+423,015DpGQSGAjbHfa7KE-p5A,Domino's Pizza,3.0,9,1.0
+424,xSaH011Ov02w-8sxr78M6Q,New Dragon Restaurant,4.0,12,1.0
+425,ZjwEfrsA2bztSk9SLrPqPA,Kung Fusion Asian Grill,3.0,32,2.0
+426,KzGXMHnlrknUhEjNyD8yZQ,Pho Cali,3.5,126,1.0
+427,2y2LhpdlHuGU6bkAHFSoQg,Wawa,3.5,26,1.0
+428,fNd-tOJGusNDcT0Kqzikaw,Indian Hut,2.5,22,
+429,AHQSq5ZdYVQUleXgPwHHhg,Teriyaki Madness,3.5,27,
+430,jAwmIPk8p2c2kxAbL7Ocyw,Sansone's Seafood Market,4.0,24,2.0
+431,bbm5_njEZyw68E7UUY0xgQ,Red Robin Gourmet Burgers and Brews,3.0,86,2.0
+432,4lVR4qfWaX-wn1v4EakF8A,Barcelona Pizza,4.5,28,2.0
+433,jJKvRg2tYr7qWP-VxdjCTQ,The Back Burner,3.5,91,2.0
+434,PGFzlPVRUz2rpR9DRAU7dQ,Murph's Irish Pub,3.5,5,1.0
+435,leaEzQ7Uz_7NID4vpx9RCQ,Juliana's Kitchen,4.5,188,2.0
+436,vVLLNrqhvrkVXfIIW9Etag,Timothy's On the Riverfront,2.5,138,2.0
+437,xNZj9zMVY7NizZyBn41BvA,Tropicalia,4.0,10,1.0
+438,Wz687hCcjVyHTCP-jd6U_Q,Gyro King,4.0,61,1.0
+439,imCIha88DmlxaWpXScRkZw,Buffalo Wild Wings,2.0,41,2.0
+440,0CeoONLXqseUxPdGerefOQ,Mexican Post,3.5,131,2.0
+441,DoHkrJJVPffu924i6MLtcg,Applebee's Grill + Bar,2.0,46,2.0
+442,j7LZM6rf4Bf33exo6XXKGA,Drop Squad Kitchen,4.0,282,2.0
+443,RLB-RxkiAcY4pwjTYUzpEA,Osaka Express,3.0,13,1.0
+444,bS2clitvOuAuxFKxA0YnXA,Friendly's,2.5,12,1.0
+445,71UVaCN8AtyovlqoS0Hixg,La Tolteca - Wilmington,3.0,201,2.0
+446,JaJDxNxLsV4h_Nkt7HsMAA,Goober’s Diner,3.5,34,
+447,7sdNASlBZhZMQalQUKB4ug,Chili's,2.0,20,2.0
+448,Rgp0ZBmxRjf0pqqVnvzm8w,Cafe Palermo,3.5,21,2.0
+449,jWmg60gRRnNhaHQyc2W8Og,OMY Smoked BBQ,3.5,9,
+450,bn0XzKxBRBWvnHUMg5cz6g,Red Lobster,2.5,59,2.0
+451,dz3dov1RfT25X_StP__cdQ,Little Caesars Pizza,2.0,13,1.0
+452,7NZ8Uq7Xtx4i7MR--1IjNA,Tierra Mexi Cali Grill,4.0,62,1.0
+453,R36Rhjk95Jh70scUravEQw,Biryani City,3.5,90,2.0
+454,L7wxBug8MF-Ag-u43DkQpg,Cactus Cantina,3.5,23,2.0
+455,FtN_ctIlpuTcAInNIMiM1g,Taqueria Jalisco,4.5,16,
+456,DCJefHxEStVHnX8acaq0xA,Jeenwong Thai Cuisine,3.5,20,1.0
+457,jwp7_9S5IslgXnA7udfkYQ,Taj Mahal Restaurant,4.0,70,2.0
+458,qwIF7ZBgyP01Cdt53aYS3w,Burgers by Wildwich,3.5,10,1.0
+459,8tccha-xTkuNLiPfJYACXQ,Market Street Grill,3.5,9,
+460,mnyk_gnb60vFB2o6Y8c2Gw,Rocco Italian Grill & Sports Bar,4.0,87,2.0
+461,P7p-rYAkkOnPURxXx3Tg8g,Bella Luna,4.0,17,2.0
+462,N8NB7lMryKMMf6SJUvzYVQ,Tony's Cafe,4.0,66,1.0
+463,z9xBQXT6Ru19ySOjdGDIqw,Dunkin',3.0,9,1.0
+464,pOCjLcWQskQjRPi6zdLvAw,Centreville Cafe,4.0,35,1.0
+465,OwBgQo86CL2GmGX0OIUEEw,The Cheesecake Factory - Newark,3.0,263,2.0
+466,SwDn4LYC7uzQMmIz8RMBBg,Corner Bistro,4.0,200,2.0
+467,leBpyQruds138tREAfRvzA,Libbys Restaurant,4.0,47,1.0
+468,gDc_CGQD__1IqL79TaUKrg,ShopRite of Christina Crossing,2.5,31,2.0
+469,prjS_8VAw65e32UtoCj5AA,Seasons Pizza,2.0,28,1.0
+470,4wvKerRd-Y88IX6E5lCArQ,George's Restaurant,3.5,19,2.0
+471,CcxT3qxaAm9_3-q2h9zt_Q,Champps Restaurant and Bar,2.5,8,2.0
+472,15IzVzKuvUCrpM1AFvDT_A,Brew Haha,3.0,7,1.0
+473,n7XtDJQVnxb1UzPPzlOlHQ,El Diablo Burritos,4.5,171,1.0
+474,d6CkVTvgiU-U-kLR1Mj09Q,Taqueria El Amigo,4.5,16,
+475,ikqbPYXQNLIvfz0kymBnJA,Romano's Macaroni Grill,2.5,66,2.0
+476,nHHOQf2pjLT5jUvkG-4DHw,Wendy's,2.0,12,1.0
+477,4orl8-9N6Opr9FJjpsSVCw,Padi,2.5,23,2.0
+478,r3dO-D1qFn4Jct7KDNvImg,LOMA Coffee,4.5,143,1.0
+479,Wo1nGE9JL8U8MloV1OaiBg,Pupuseria Salvadoreña,4.0,29,2.0
+480,vLiXVP1WHdilv13s5SnnQQ,Bachetti Bros,4.5,24,1.0
+481,PEb_HioboxCfFONLZzVNTQ,A Ya So Nice Authentic Jamaican Food,4.5,20,
+482,ZzCcljlsQco6WsRDGaV8mQ,New York Pizza & Fried Chicken,2.5,6,1.0
+483,skT9ekzLdiQRg6Wo2OzMvg,El Mana Restaurant,4.0,24,2.0
+484,R1NlqZdqYbs-KXLPXROS-w,Lamberti's Cucina,2.5,23,2.0
+485,5xIcqp5q-6mw1FKaKpRCxw,Chuck Lager - America's Tavern,4.0,132,2.0
+486,EQr26hrk8cEYsZjaMVU57g,Kegler's,4.0,8,1.0
+487,FhI8-M6EYtwfrerkWL_VMg,Vincente's Restaurant,4.0,79,3.0
+488,VKUUdRVElaufzQAI4OcxLQ,Semo's Cart,4.5,12,1.0
+489,FoIzWtiwffKyfKJHsm7VKQ,McDonald's,2.0,11,1.0
+490,prGQTaFLeso7Qkzy-lOz2w,Flavor Of India,4.0,25,2.0
+491,2b-txFFWmKKq4AL-pnIxZg,Noodles & Company,3.0,36,1.0
+492,l0qTrHzfkquC144PkJh4Rw,Merengue House,4.0,24,2.0
+493,DGatNT8XO1aYuYVYGyWkPQ,Big D's Pizza,4.5,9,1.0
+494,xHWi7ZQ0zlRoKWlfnmhOYA,Feby's Fishery,3.5,141,2.0
+495,Y9EfIbXryZVWA3IVx86bAw,Olive Garden Italian Restaurant,2.5,72,2.0
+496,5oEyGDeqeXeMfFXZdevtFg,Okura Japanese Cuisine Restaurant,4.0,61,2.0
+497,RO1LyRwH2eZT_eNUN0dC3w,J.B. Dawson's Restaurant & Bar,3.5,144,2.0
+498,rugDoz-A6vL-FG-8PbvOag,Brio Italian Grille,3.5,221,2.0
+499,BEbSlK67eM7YnE9O5R7cGA,Papa John's Pizza,3.0,16,1.0
+500,1h-Irop_Rad5LB9EBf59SA,Five Guys,3.0,26,1.0
+501,70a-DEnbsZiYIjMaXnO8rQ,302foodplug,4.0,6,
+502,TwZnsqJCFncURCDQoEypSg,Joyful Garden,2.5,34,1.0
+503,J1vj7-l7v4jYXxSR6ffPkA,Kyoto Japanese Restaurant,3.0,51,2.0
+504,eBo_ZnzWshp5Myx7ugbMhw,Terra Cafe & Grille,4.0,22,2.0
+505,4mEqLXZD6aU3ymapf_hbIw,Pat's Pizzeria,3.0,24,1.0
+506,bKeKYs8NycSzIYvpT_6ncg,Greenhill Deli-Pizza,4.5,15,1.0
+507,YSJ2WaubNxMCnlNsZfIQbQ,Locale BBQ Post,4.0,59,2.0
+508,Lb5Gi0VnxwtFXk3sMTSMcQ,Fresh Thymes,4.5,75,2.0
+509,oa4bCkow1hrF6pqQCT6EGQ,McDonald's,2.0,15,1.0
+510,e1D2n12gzzsyCdUdas5MKg,Crab Du Jour - Wilmington,3.0,8,
+511,WjGfcajYECW1zEoinqpc2A,Panda Express,3.0,11,
+512,IzUXCIMWeocK1fJHdrgJgA,Naf Naf Grill,3.5,50,
+513,oZfUOoDJnORwQrDTqUJ-NA,Mike  & Nick's,2.0,14,1.0
+514,LZquQqjVqoWFhVUqfLxUKw,Valle Cucina,3.0,75,2.0
+515,m5fKuw8ZMfYjJLtcISCORg,Noodles & Company,3.5,26,1.0
+516,51Fo_uY52A5oaI8YTHU5yg,Trolley Square Oyster House,4.0,172,2.0
+517,XjaYTbAMsIOkofZJ4QSuJA,Sleeping Bird Coffee,5.0,8,
+518,sy7uEcDtctaeYqD7HGrPCg,Casablanca Moroccan Restaurant,4.5,102,2.0
+519,L3CwFF0JhicaxVfWzzrEAA,Bonhouse Chinese Restaurant,3.0,39,2.0
+520,Qx6IaAjbIECWWaRuqjYMfw,Panera Bread,3.0,66,1.0
+521,K3ZZua4ab6YLhPqZ_DEDlw,BBC Tavern and Grill,3.0,109,2.0
+522,cbimTBHAiibDpq8O6mP4VQ,Trader's Cove Coffee Shop at Penn's Place,4.5,36,1.0
+523,5QPZY59iu3a0C-jWsZR8ow,Charcoal Pit,3.0,214,1.0
+524,QOMipQ_Xd2ISvO0MvAS_xQ,Gaudiello's Italian Hoagies,4.5,105,1.0
+525,jQJqbe8WXuQNKlUNXfpXmQ,Pizza Hut,2.0,8,
+526,s-0tlWRv3QQnFEzs5CytRw,Shenanigans Irish Pub & Grill,4.0,14,2.0
+527,-rf-o_H-3_6XUrSxOLRcpg,Chick-fil-A,3.5,32,1.0
+528,JgYdYd7qXgFXVjGWFJOz1Q,Walt's Flavor Crisp Chicken,4.0,17,
+529,qC8Whdafj7-DQ29b7Rlcdw,Burrito Bandido,4.5,31,1.0
+530,E9KNLJmufM-fFHV9xJSK4g,Papa John's Pizza,1.0,8,1.0
+531,tpJSzkIvZYvGJB7rekoGjw,Unique Chinese & Japanese Cuisine,2.5,12,2.0
+532,T3EnbJYkiMHutSxh0asEfA,Tutto Fresco - Italian Eatery,4.0,71,2.0
+533,WXVb0_TPSNGjqRshykMY8Q,McDonald's,1.5,23,1.0
+534,59RdMsr5iXwZnD_qlnPskw,DH4 Jamaican Cuisine Restaurant,4.0,16,1.0
+535,dg3w68b9e4pJsdeCv5pHVQ,Wawa,3.0,9,1.0
+536,NDk4qwpkU2npNZu742OdBQ,Angelina's Italian Grill,2.5,33,3.0
+537,v22_o4QdnXqLaXSO9MZE7Q,1 In Town,4.5,10,2.0
+538,lM5TtwwucIPIzEPeDqDaEw,L & G Southern Soul Food,3.0,52,2.0
+539,JJF7J3UXCNSwCXAP4LojtQ,KFC,1.5,14,1.0
+540,jXHjuZSgxAPCDZjxBXsPZg,China East,2.5,7,1.0
+541,7T3curcaRIXUmbXZEE6lVw,Hong Kong Chinese Kitchen,1.5,6,
+542,I99hAdRjOW31DfHW6MUqwg,Capriotti's Sandwich Shop,3.5,75,1.0
+543,eUes9qc-i7WMkUIdtddNDQ,Burger King,1.5,27,1.0
+544,2UPOe4CTsy57JyBWCjNWbQ,The Reef Seafood & Steak Restaurant,4.0,121,2.0
+545,RjUlQqekSL14zu4rNOZuEQ,Jersey Mike's Subs,3.0,19,
+546,pn00KcFyvm88u7uwzka7cw,Taco Bell,2.0,17,1.0
+547,IHO1oAX0PrEQo5VYuipX7g,Culinaria,4.0,53,2.0
+548,8htTVv-lUyz2SUXKcwSC_A,Big Sky Bread Company,4.0,25,1.0
+549,LOYex5JW6KuH_4t332wzsQ,Kelly's Logan House,3.0,69,2.0
+550,ULnAfyqr9dL2_yRsHdYFEQ,China House Express,4.0,11,
+551,4hWPnJWr1pJYOcI0CGrzWg,Green Room,3.5,86,3.0
+552,BJxoz5d_Z45JasgZ7o-5_g,Satsuma Asian Kitchen & Bar,2.5,41,2.0
+553,pcT9YZDxLYRriQhWz-PnhA,Hooters,3.0,19,2.0
+554,DB36BjmWWPkWqESu9tjIaQ,Ciao's Italian Grill & Pizzeria,3.0,50,2.0
+555,MHCH84BAFfYXyY-NujHG7Q,Sonora at The David Finney Inn,4.0,9,
+556,gFOs5ho8kuPyYBdVkR3VHA,The Brasserie Grille,2.5,10,3.0
+557,NzuiDTVc1KOBPb-ZJgG2WA,Yatz's Subs and Steaks,4.5,26,1.0
+558,u6J-aO61VRmS7NKeBzrSjQ,Buckley's Tavern,3.5,219,2.0
+559,2KnB5sR6QmD8YRcEGsa8ow,Dorcea,4.5,25,
+560,mHwn3XzGpyTXAe167aHMyA,Royal Garden,3.0,9,2.0
+561,gkZ6iiEfnO7I2UzOHbkzrA,Ulysses American Gastro Pub,3.5,248,2.0
+562,4EWOA4I8_oszeXs7_ejJWA,Avila's Bakery,4.0,7,1.0
+563,CFBnmxqAm4vX6v4BFye70w,Banks' Seafood Kitchen and Raw Bar,3.5,287,3.0
+564,y_ErDiWeXxyYcL1_U966qQ,Yi Palace - Wilmington,3.5,118,2.0
+565,LI1pBFuAuen2hD2a5rilug,Torbert Street Social,4.0,37,
+566,BHTpjNMdeja_cg9pRnRBOA,Kid Shelleen's Charcoal House & Saloon,4.0,217,2.0
+567,CQgXWdtFDfshGMVpWqE15A,Cheeseburger in Paradise,2.5,34,2.0
+568,YiNkf4WpIwLjsJPmgUeCRQ,3 Stars Pizza,2.5,28,1.0
+569,rRWAgAsFhtXbhy8GoSt-TQ,Domino's Pizza,2.5,9,1.0
+570,sL_JrM7Llw5arZh0-JxZ2g,Zoup!,4.5,51,1.0
+571,i8uaneoCO8Nd6FVa02PBLw,BarRoja,4.0,27,
+572,zfZvIjyu_hsnrnDcUZuBqQ,Pizza Pro,4.0,29,2.0
+573,OfUF725s1RaoaEOPY3hwZg,Poke Bros - Wilmington,3.5,46,
+574,Ds8E5RPjm2UHUemXJVTs3w,DECO,4.0,41,2.0
+575,UVYxBJITEqiM1BJWbfUYMw,Papa's Pastry Shop,2.5,9,2.0
+576,gHPS6jy5UzfVUDLUE74Y-A,Dunkin',1.5,7,1.0
+577,XivGJBspUK_LWVRyp96EBA,Crazy Bone Cafe,4.5,10,1.0
+578,_-pljHy_NUTTdd4dQBL-Yg,Hunter's Den Restaurant,2.5,31,2.0
+579,O-k86O0GnQgBn9KxUiE1iA,The Chicken Spot,4.0,11,
+580,52pgQaYBZx8axZK4mPn0Ow,UDairy Creamery Market,4.5,36,1.0
+581,taQYHTJVJsnguw_tfEBShQ,Eat Clean,4.0,16,
+582,QaPPKjlmCqX98J62Y-dlkg,Delta Restaurant,4.0,27,1.0
+583,h0jLNrV28BX3AC6yHaN2Kw,Cacciatori Pizza & Pasta,4.0,37,2.0
+584,-HlTwWdzyN7Ec1xTjntfog,Krispy Krunchy Chicken,2.5,5,
+585,50nOu5uopq2EbrSM90ZxOQ,Three Ddd's Steaks & Hoagies,3.5,19,2.0
+586,dRFSMj5Q3lro4UDeN6oCQg,Bogle Cove Oyster House,3.5,28,
+587,wmDbIUgNaiemdgc6S2_-_A,China House Chinese Kitchen,3.0,10,
+588,m_a1nzDkdwYV9P2FvxqGsg,Bistro Jacques,4.5,13,2.0
+589,aRetE3hno9ISsRMaRaobGA,Lettie's Kitchen,4.5,64,2.0
+590,LWIXucbDnKfXt1se2wtqLQ,China Royal,3.0,9,2.0
+591,m0goxK9IkGhjoyfEA9ZvBQ,Carolines,3.5,6,2.0
+592,pVNQNJe5D5jnygJjWwSnfw,Snuff Mill,4.5,11,
+593,8nio_7eFGbCSLhiLwbWvdA,The Dog House,4.0,140,1.0
+594,evrQGHs_lC_fmEniotaX8A,Turning Point of Christiana,4.0,140,2.0
+595,2kDAi5Od8S7C5QQ0TvLVxA,New Hibachi Express,3.0,13,1.0
+596,i6-HSvdSaNy-Sr4FXiM9YA,Mystic Pizza,3.0,9,1.0
+597,wYvNRu5yElMs108nz908hg,Tailgates Sports Bar and Grill,2.5,22,2.0
+598,86Zz4Bysrm6GIBpci955wQ,George & Sons' Seafood Market,4.0,88,2.0
+599,7PmBvrYIRJRWM9dfp6Mv-g,La Taqueria Riverfront Market,3.0,10,1.0
+600,Soz-9beX1fUmz3Yxp1sphg,The Greek Festival,3.5,14,2.0
+601,FnI_J_T63I3Py7GnnmDaWA,Sushi Xtreme,4.0,91,2.0
+602,msp4nQ9YPzSA7d6fVbSrAA,Tree Garden,4.0,62,2.0
+603,GsTHcKsO4c9ZnK0AdwfCpw,Starbucks,3.5,9,2.0
+604,MsahEUyFXv-chom17KI_3w,Appleton Catering,4.0,5,1.0
+605,Ry_VL75WDfuudBMu3q4cAA,Dino's steaks,4.0,7,1.0
+606,i5PMM5ERgui9glBLO1vq9w,China King Restaurant,4.0,12,1.0
+607,sRATWcg2MaU6_wVVLCmxog,Tasties 302,3.0,14,
+608,vnANhbKBSyn_Kxul3ReR9A,Slack's Hoagie Shack,3.0,12,1.0
+609,0EYptIjdWCC41e03GBWwOA,Zach’s Grill,4.0,12,
+610,xJ2-lBf5qtfyDCrAwrOpdg,Pike Creek Pizza Company,2.0,12,1.0
+611,ryqbpGS2tPKo2d9DkEdf4Q,Taqueria Los Compadres,4.5,71,2.0
+612,OHtGdFojocDNolQYDWLnWg,Taco Bell,2.5,23,1.0
+613,LsMs0NL9jBukdsPqTP-sOA,World Cafe Live at The Queen,3.5,54,2.0
+614,qOFcDjpUw5oeV7LIdDAubg,Green Box Kitchen,5.0,20,
+615,cemvFp_hGI_6ev5_pd9Lew,Tony and Dominick's Pizza,4.5,41,2.0
+616,lkAzVdzEZE0jEU91PmvQhQ,Margaritas Grill,4.0,33,2.0
+617,-jtTmbqX3jeMs4z693SO4w,V&M Bistro,3.5,93,2.0
+618,N_Pv_9FMS47hR3w6TH4rmg,Szechuan Restaurant,3.5,28,2.0
+619,W1TfZnKeZxP5KaNPB3SXxA,El Amigo: Taqueria & Store,4.5,11,1.0
+620,9XzPqLGIkuN1rmqWH7aP9A,Legal Grounds Cafe,5.0,87,1.0
+621,ja-xLPyx8Ha3tJ-tx-0CCw,Tj's Jamaican Spice,4.0,7,1.0
+622,AED1P8U_kyYerD1OPndpTQ,Papa John's Pizza,1.5,25,1.0
+623,fqyKLWyaBHAz8I-FhEsruQ,Oasis Middle Eastern Restaurant,3.5,75,2.0
+624,nyISj6w5j8OBgbG88C5rZg,Capriotti's Sandwich Shop,3.5,44,1.0
+625,FWasI2Kq6OGBN60pvN__wA,Burger King,1.5,8,1.0
+626,7soL3w71DCyyoC9XKLODkw,Sixth & Pine,4.0,24,2.0
+627,bOsKg2PXQeSjTPWYNFnKxw,Bull's Eye Saloon & Restaurant,3.0,18,2.0
+628,nGcfY8qVamkNIW7emQlfSQ,Don Pablo's,2.5,127,2.0
+629,uK-mJE9L3P4X80gKp69i9A,PrimoHoagies,4.0,41,1.0
+630,_6BiItGONFUlzOYEYBMFkA,Trolley Tap House,3.5,78,2.0
+631,yEHnyZkYPROFuSf8jDfVVA,Colbie’s Southern Kissed Chicken,2.5,21,2.0
+632,13l05k8AeGBJOIp5H4wlIA,Applebee's Grill + Bar,2.5,35,2.0
+633,4B1NLfBJRfeJ_7bKVTNa_w,Evelyn's Soul Food,3.5,52,
+634,Ct_g_xmNh1wvpfTD-QLI8Q,vPho,4.5,217,2.0
+635,plf8Gya3Yzhy1pA_pUXWyg,Taj Palace,3.5,12,2.0
+636,OIeYD36y99Q6xObzwCJPwQ,Cuzino's Pizza & Pasta,3.0,39,1.0
+637,8zSe71yhFMeydp1UKJrEEg,D & H Jamaican Cuisine,3.0,90,2.0
+638,trkKocO5llb_3z54Q01q9w,Mike's Famous Steaks & Subs,4.0,39,1.0
+639,0cLTDo4xyBWCxp0bMmwjIw,Chicky's Pizza Pub,3.0,10,
+640,TPYRKrXsdUfOUQNFm6w_3w,Bellefonte Cafe,4.0,100,2.0
+641,S6ACtNZ5wY0EjmK07iWUgg,Iron Hill Brewery & Restaurant,3.5,512,2.0
+642,CUHE082XLb3X-vKsnFp4aQ,The Greene Turtle Sports Bar & Grille,2.5,88,2.0
+643,it6lzjNprkWZ2oKIHdfslA,Little Spice Indian Cuisine,4.5,10,
+644,752g7SDnEV4Jcj_fsEvWxA,Sicily's Pizza,4.5,5,
+645,jFUhWIXq4dDyMY5Z1yzwQg,Stone Oven Soul Food And Pizzeria,4.0,8,2.0
+646,Wbqv9rUtbNanq-hhegOYsg,Pizza by Elizabeths,4.0,180,2.0
+647,DYIwMZs0aA0VqvzTAMuxag,Seasons Pizza,3.5,20,2.0
+648,5pQ2MsxB0eV8NDPJMO2DSQ,Capt'n Chucky's Crab Cake,4.0,6,2.0
+649,GLdfpx0O93HoIJfHonV-JQ,Market Kitchen & Bar,4.0,21,3.0
+650,UGRRI0KG9S8WI-oWTaPaHA,Joe's Crab Shack,2.5,151,2.0
+651,YLzdt-K1lTH-SaE8j5NqIQ,Salvatore's Bistro & Brick Oven Pizza,3.0,6,3.0
+652,_BDXbsPPdSj-MbdwdICqAg,Wawa,3.5,7,1.0
+653,iGJ6-XgJrOkEgm-ahmS4sA,Sunrise Sandwich Shop,5.0,14,1.0
+654,ht70fX_P9ufTqDxIjtbwpA,honeygrow,3.5,93,2.0
+655,VkHexf3mBy-8hu2vsSVd4g,Chiwa Bistro,4.0,113,2.0
+656,e4GIbSFHess2qAopZNzxMQ,Philippine Smoked BBQ Grill,4.5,111,2.0
+657,9KPLUSHOx2vgaK7n_tYs2Q,Tung Hsing House,2.5,12,2.0
+658,vfaKBk38ajlSYnXBc9dmEQ,Madison's Smoked BBQ,3.5,16,2.0
+659,JqdovxCkzQgj872gX4qZxA,Hot Spot Pizza,4.5,11,
+660,B61ZWIX1AEl76A2WEdDZMw,Lestardo's Crab House,3.5,123,2.0
+661,yoOKenFN8L3BS80iOi083A,Cafe Pizzeria,4.0,15,
+662,YFIk4noVT4mrdF2fiEr85w,Pamela's Gourmet,5.0,5,
+663,XxptQeCkYTcDy4gQRAg9UQ,KOI on the go,4.5,23,1.0
+664,1mDmIanzPk0zEEytGdtaHg,The R Lounge & Restaurant,2.5,7,2.0
+665,ga8LWom8Xzu0ZKaohW7Jtg,Pats Pizza & Bistro,3.0,24,1.0
+666,6pWjGY72eQJ99Khs2adWZg,Dom's Deli,3.5,9,1.0
+667,jMOIi_o4pmPwR_Q8P7gS5Q,Basil Bar & Grill,2.5,11,2.0
+668,mNKL1JPiN2zBrUmIgTM56A,Eclipse Bistro,4.5,141,3.0
+669,_-OXe_vQnPRZp7-JBqXmbA,India Palace Indian Restaurant,4.5,84,2.0
+670,B0SPP0RsKkJxf6zK6mG9kw,Dragon City Chinese Restaurant,3.0,14,1.0
+671,vkffDkvbUwkgEXoBbCAXng,Famous Dave's Bar-B-Que,3.0,64,2.0
+672,5k1Hk_ETYdNASh4IrmCXKg,Wawa,3.5,23,1.0
+673,z_MefzpYwQkxXorCdQTUjw,Viva Chicken,4.0,68,2.0
+674,luUGLqA3Gxv5raCJOAzblw,Firebirds Wood Fired Grill,4.0,430,2.0
+675,zgSZxYaCI0wcMTR0Dxd7oQ,Dead Presidents Pub & Restaurant,3.5,98,2.0
+676,V291Oax3fUUxUzXnOpOqCQ,Paradise Biryani Pointe,2.5,49,2.0
+677,Iud8PGRJx53S4zpBVC2pSQ,Moro Restaurant,3.5,115,3.0
+678,yJ2585fQD8lcuckZ4QIdmw,Pho Bami,4.5,90,
+679,e4Ykq4wvcUmBQmJTMd3Vzw,Domino's Pizza,1.5,37,1.0
+680,Nr2_KH54XKYxVV99zLkm_w,Los Taquitos De Puebla II,4.0,13,2.0
+681,L7r4uOZT58z1Vv-rGlSZBg,Scrumptious,4.0,305,2.0
+682,Fs08fD1W5krz7vkc-qmpAA,Jamaican Mi Hungry,4.5,29,2.0
+683,bjE19DpRbN-OgTMVaMwpJg,New York Fried Chicken,3.0,5,
+684,kehm5RaeTwFNT43jfm7BSQ,Six Paupers Tavern & Restaurant,3.0,60,2.0
+685,9tXwyr5Yqu4WnuCLOUPtrQ,Taco Grande,3.5,33,2.0
+686,veEVH9fwkhs_iR38LlK2yA,Cafe Americana,4.5,29,
+687,9QsamgtWTCpiYVrFr-p26w,Chipotle Mexican Grill,2.0,15,
+688,IiWJAgqRZnccukTwi_YjvQ,Tijuana Taco Shop,3.5,19,2.0
+689,Da1Cc7gaouF_2avorSj-PA,Brew HaHa!,3.5,16,2.0
+690,ssCzAwPICd79FWhkqdpgBg,2 Fat Guys,3.5,56,2.0
+691,Un6hqD_6kzW1VW8SVuN7SA,Los Jarritos,4.0,17,1.0
+692,-VbtijUhH4xVP7cZbEo6-Q,Ted's Montana Grill - Christiana,3.5,149,2.0
+693,XqOSW0xVG7796_l_5-ai1A,Mexican Table,4.0,112,2.0
+694,skP6KUZgrEzY1udMSfBOyA,Hot Spot Pizza & Restaurant,4.5,15,1.0
+695,FB8GTSt4sBBNA9yZPZ4teA,Master Wok,2.5,9,
+696,_6BDxk8486ZYiRwpPmQewg,Limestone BBQ and Bourbon,4.0,174,2.0
+697,gV-u_5SA-htqslt2yUaLgg,Negril Caribbean Restaurant,4.5,7,
+698,ZzN0X75GAtJTd-WOdPGNtw,El Toro Cantina,4.0,9,
+699,-q8Dnex7CtMFkg04gDd09A,Planet Hoagie,3.5,5,1.0
+700,Uq-y9KERobbe95mVet8NWw,Semo's Restaurant,4.5,23,1.0
+701,VmxGFqtplC3yIOClQ3Tulg,Tex Mex Burriro,5.0,15,
+702,aqLHq0LCuqgVVjcsjeyTbA,TGI Fridays,2.5,68,2.0
+703,wANOZ3zhbnWMchaeHfksSw,Sub City,4.5,16,1.0
+704,_e0k_CGqUSp0_c17GaLSzg,Bites & Slice,3.0,17,
+705,yOWecDeW4MIBj-Hbpen3Pw,Maui Poke Bowl,4.0,15,
+706,qWLHeczMVxxanXnMldknJw,Kampo Garden,3.0,13,
+707,s4sR4VUo5bzMcpXuiAj-EA,Quinn's Cafe,4.0,49,1.0
+708,fg82H-02ojEUHAgDKk0Acw,Wendy's,2.0,11,1.0
+709,4sZVseAd2XZrSReEmBlMFQ,Lone Star Steakhouse,2.0,36,2.0
+710,FXyX5mm_2daiHTzEMukVEw,Popeyes Louisiana Kitchen,2.5,12,1.0
+711,TqDErLK4t0TfSiFzxuocuQ,Casapulla's North Steak & Sub Shop,4.0,52,1.0
+712,t33PAjYsxtFw--8NpLKfNg,Panera Bread,2.5,61,2.0
+713,Lmb-iJGzBu_1W-dEvB3TBQ,Krazy Kat's Restaurant,4.0,89,3.0
+714,6T-hXleL9aMLf-sezBjs9Q,Panda Express,2.5,18,
+715,Me4mO0eMVp5ZY3Smznr7tQ,Taco Bell,1.0,25,1.0
+716,1vMvq4kXlOmSdPDWp_1shg,Levitea,5.0,8,1.0
+717,CBDzS_gMn_-jO3_4XXVYeA,Hideaway Bar & Grill,4.0,14,1.0
+718,XmlF_2NbH65tDiSd2u2M5A,Gyro Kabob House,4.5,249,1.0
+719,4JR06JiS8W8ieXoF1ZWkGg,PureBread Deli,3.5,27,1.0
+720,k2qArgJgsWWrtWT_r0rRlQ,The Rat Pack Bistro,4.0,9,2.0
+721,srk9xvVrkXrEKUP-7oXAfQ,Stanley's Tavern,3.0,108,2.0
+722,8o3w3Tu368WTFz45rMLvYQ,Nordstrom Grill,3.5,17,2.0
+723,VBt9CM3hcetWVDREp-_IrA,Dumpling House,4.0,5,2.0
+724,VfkltVSN0Yhyu0Cgwhml4w,Salute Bistro & Bar,3.0,17,2.0
+725,wP9W_KYu7qASDfkVZDP87Q,Olive Grill,3.0,10,
+726,t13D7cAJSWtJj19uatqoXA,Kooma,3.5,62,2.0
+727,4OX0hYoXnXB9ihtptZByug,K'S Kitchen,4.0,15,
+728,s_sEMaNkRtwjEFJfStaOgQ,Cosmos Restaurant,3.5,71,2.0
+729,d9-_PYtP-qklQ9Q7iLU8cw,Wings To Go - New Castle,3.0,10,1.0
+730,_yqi2ut_GE9R13ZmMoqz1g,Junction Eighteen,2.5,5,2.0
+731,EP9K6qXOyHFq_0tp93wh9Q,Big Fish Grill - Riverfront,4.0,456,2.0
+732,LGYzaCmNj3_FiG-r8U1-mw,Capers & Lemons Restaurant,4.0,187,2.0
+733,wz_wBcvlHhLi6DGKi_MPOw,Angelo's Luncheonette,4.5,49,1.0
+734,b2eIruLWQpwgeoSWExmTVA,Berri Yummi Frozen Yogurt,4.5,26,1.0
+735,YCLI8aFvdM3uUE-MgrPJZQ,Newport Family Restaurant,4.0,45,1.0
+736,rt-b9ewIBHvlYlNuoCx2cA,Nick's Pizzeria & Italian Restaurant,4.0,18,1.0
+737,hJvw6uua0KFIfBF44Hf2Eg,Cafe Pomodoro,4.5,36,
+738,L-vZQuTZFNqjRdXdUnlurQ,El Camino Mexican Kitchen,3.5,105,2.0
+739,CE4huEPSU8-7CRoxqcNfBA,Gianni's Pizza,4.5,36,
+740,h3mMPUeFLnd6JjlztFBRXg,Hunan Asian Cuisine,3.0,34,2.0
+741,Ick2_d3ywqp7d7Sf1Keb6A,Rigatoni's Mobile Crab Cakes,4.0,9,4.0
+742,gk3hzKydevLKZ2FVmJdt-A,Nora Lee's,3.5,207,2.0
+743,5mJKPbzXp6PyFcIpHN4RlQ,Rodney Grille,3.0,10,2.0
+744,jRbCgGm1cpIcBZf-vOhJvA,Daily Veg - Pike Creek,4.0,56,2.0
+745,2vPU40ZWpAfL2e5iAfJmaA,G & P Pizza,4.5,7,1.0
+746,FQbLZ_N_VuinjfBFxzK3TQ,Melt Shop,3.5,13,
+747,3RvolkfkPzFkAHKWEG0Wnw,Brew-Haha,4.0,30,1.0
+748,L3E-e_f-io2kcnT-hDbT4w,Friendly's,2.5,19,1.0
+749,87ufxVV8RjtnLJjwjKG_nw,Ruby Tuesday,2.5,44,2.0
+750,6cJQb8SEUqti-0S04e9Yow,Seasons Pizza,3.0,28,2.0
+751,Y1pykNVnghzVSW775FjP1w,1000 Degrees Pizza Salad Wings,2.5,25,
+752,5Ubo-2HLRnCCo8Pnq-v-cQ,Dunkin',4.0,14,1.0
+753,qJcmu67ZEQ4bd1m9Kh_T1w,Kalbi Asian Bistro,3.5,109,2.0
+754,MqJlz0N3ujhtZCWnJmOpZg,Cafe New Castle,4.0,69,2.0
+755,YCPSELmCiZGB0xuKd558uw,Sugarfoot Fine Food,3.0,10,2.0
+756,eRHLp-PimreSNP5dR41nVg,Saladworks,3.5,10,1.0
+757,hH5J-JyOWUjDvCrXBwr2Wg,Mulrooney's Tavern,4.0,5,1.0
+758,47IVPsHZAA0soPvidEnNbw,Pickles & Chip's,3.5,46,1.0
+759,j8Tp3nm8PYtO2exarX8zVg,Boston Market,3.0,22,1.0
+760,LhQ_DPEESCNf-hy-GrrMdQ,Scrimmages Restaurant and Sports Bar,2.5,21,2.0
+761,yJ3PJRDGKjnsmqW7BFbB_A,Connie's Chicken and Waffles,3.5,12,
+762,FiQtALz4rxB-vCiq7ytrSw,"Just To Serve You, DE",3.5,62,2.0
+763,PADyvVwZoY8waIraBOrN7g,Johnnie's Dog House and Chicken Shack,4.0,151,1.0
+764,h4xFP51FllJyCReUnzH6Ug,Madeline's Italian Restaurant,3.5,10,2.0
+765,JDBjHAYQozrnkaph5XQTTg,La Consentida,4.0,11,
+766,1lOOo2L-Q9jvJAs-nN9dlQ,The Melting Pot,4.0,79,3.0
+767,5tSloJbLGvllqnn9neahLw,Dunkin',2.5,7,1.0
+768,NO6mSRC0hE-cl7CwdRPxmA,Hibachi Japanese Steak House,3.0,33,2.0
+769,JXXjN3mw4zKdBTpRtVQKcg,Pizza Pro,3.5,26,2.0
+770,Vg48ETIyEP9MALSqfDLGmA,McDonald's,2.0,19,1.0
+771,0wX-W6ljNl0qJVEaE3tEbQ,Five Guys,3.0,21,1.0
+772,MsWmW4SkisV0uJIBxeNstA,De La Coeur Café et Pâtisserie,4.5,160,2.0
+773,vJLbVnnZFb_kiUMjGIWsSg,McDonald's,1.5,7,1.0
+774,_vpIEol9cEn3Y3KLpwbGkg,Chelsea Tavern,3.5,277,2.0
+775,cg-5DuEk0AMzuILNx8FGtg,Denny's,2.0,70,1.0
+776,BnbHihkBM50Xq-uBy5bpcg,Cajun Kate's Philly Pike,4.5,64,2.0
+777,_CYSduKMEb9c_q2zX63dmQ,Mi Cosina,4.5,21,1.0
+778,FzlicQyHeIbLGreKpfrOmw,Charcoal Pit,2.5,46,2.0
+779,JdY3_VeTm-dC3MG6Uzi1Lg,Seasons Pizza,2.0,31,1.0
+780,O4pbnpQYTSifS9plCU06ig,Domino's Pizza,2.0,15,1.0
+781,tb7o44eBlw-mLux6ODIXGA,Serpe & Sons Bakery,3.5,40,2.0
+782,UGHVZSx-t_bVeMfFE-MYwQ,La Poblanita,4.0,28,2.0
+783,zXQ2dEqAmUQfacYCZLehpQ,Jake's Wayback Burgers,4.5,9,1.0
+784,Gu_CWWSWsd37hpJyEHmgTQ,Prima's Pizza & Pasta,3.5,28,2.0
+785,jeL2UXjzEqjAj9hXhIdagg,Merchant Bar,4.0,51,2.0
+786,m3tc5lXPk0VQB8gjYANXIQ,Eggspectation,4.0,218,2.0
+787,0CennNWmhiYdSOEkGr7vkw,Pan Tai Restaurant,1.5,6,2.0
+788,3lz2SeaByGnNHkqefOOw7g,Hachi Asian Fusion,4.0,39,
+789,_GWFsg1dl--bf7SnnCH4zg,El Tapatio Mexican Restaurant,3.0,161,2.0
+790,rC8BSNd6Anq41TVkP92kOw,Wawa,3.0,10,1.0
+791,zJo7j03ZP32Ou3YdGh5fQg,Shake Shack,3.0,140,2.0
+792,WjfKT9KFRIufHXQkXp8Kzg,Hong Hing Chinese Restaurant,4.0,37,1.0
+793,23hSJ8QvSK0J7pcqXARrOA,Red Lobster,3.0,51,2.0
+794,timmWUfeZ0ES0-mGnY5E2g,Park Café,5.0,5,
+795,YPk2HzBuz3Pro6snB5l3KA,Route 3 Diner,3.0,70,2.0
+796,3KAW3nQD8w-eRy6U3sM0Tg,Mr. Taco,2.5,12,
+797,BMM41XabMlOBDdv9A-P95w,Chipotle Mexican Grill,2.5,8,1.0
+798,YTVRcMtQ0-dPkITAHTiZ2w,Bella Vista Trattoria,4.5,9,1.0
+799,jBgAnt-Espd14jxCshc1SQ,Metro Diner,3.5,148,2.0
+800,5RZPAro3mrnVVIQ9FESIyw,Treehouse Café,4.5,59,2.0
+801,K0Cw8KXgF23sEji9TnfBkA,Le Cavalier At The Green Room,3.5,41,
+802,GUapKeZz8THjpuS3urS16A,Wawa,3.5,10,1.0
+803,4iuNK5svIKV_GrbSwAXM6Q,Wawa,3.0,17,1.0
+804,EXEX90O-ULvk1FB-q0WELg,IHOP,2.0,19,2.0
+805,LTEpFgVru40dLvg1dsaD8g,Milk+Honey807,4.0,14,
+806,byc92hBKz0DKvjcpl76LRQ,Jasmine Asian Cuisine & Sushi Bar,3.0,145,2.0
+807,ut9lc20Dq7tUH0tZMKic1w,McDonald's,2.0,16,1.0
+808,wzR95QhtA8xn7cLEfsQWmw,Mamma Gina Pizza,4.5,14,1.0
+809,wyUcCSAhlgxNJvh1EmmobA,GoodEase - Take and Bake,4.5,13,2.0
+810,z_mI02wyyYD6PJ9wHqY1fw,Saladworks,2.5,19,1.0
+811,KyRjvo1p7pQlyRsGHKOUHg,Papa John's Pizza,3.0,5,1.0
+812,pIoIdh3M-RQ9ohTtgzGd9A,India Grille,3.5,117,2.0
+813,cDY4-OYo1IOGzxrbS4p3iw,Twist'd Tomato,3.5,24,
+814,14V1okj0kDg2JU6ykdeKLw,Ming Garden,3.0,21,1.0
+815,9rqb7gBJPbsFuESZfVMaXQ,Orillas Tapas Bar & Restaurant,4.5,44,3.0
+816,wST1GG4p9sCoOuvKKvLVWw,Jakes Wayback Burgers,3.0,14,1.0
+817,WqjT1iiNEzr8P9kis0GunQ,El Pique II,4.0,5,1.0
+818,uk_3KQEx_v-cV0GO1yvyKA,Express Wings & Pizzeria,2.0,13,2.0
+819,UQxzV_rY0rdbW9pPR2dsTg,Michael's Restaurant & Pub,3.0,96,2.0
+820,lgxwrbvtz-Vqhc-oryi5qQ,Ciro Food & Drink,4.5,59,
+821,jns8FlhfwbGfsE10eKLBnA,Market Street Bakery and Cafe,4.0,23,1.0
+822,F82shtmHPubyaRgwJVdf-A,Evergreen Restaurant,4.0,12,1.0
+823,S7A1UW-wCpPP70d9mEbc1w,ShopRite of 1st State Plaza,2.0,18,2.0
+824,Nb-kpSwmX_LA-1fnvfRT_w,The Wicked Vine,3.0,6,2.0
+825,YXceGbVTwnTHsPbRb1gp4g,China King Restaurant,2.0,7,1.0
+826,ZE6HI1zBSlGDYAUXzvVixg,OB's Jamaican Restaurant,4.5,24,2.0
+827,kIiFXhJY5mymV8_25A7jrA,Fresco pizzeria,4.0,22,1.0
+828,QnAhrSePleZX_Tof5CR3hg,Checkers,2.0,5,
+829,YvkadIJ-G9OPpnCOSW2ISg,Le Shio,3.5,201,2.0
+830,nvpT3yvXm7fPDZlkzkf2fQ,Taco Bell,2.5,18,1.0
+831,SxyKh33vZAUevgqQ5CYGtA,Temptations,3.0,11,2.0
+832,bjZQ8Ql0QzlRW6GgdgIytw,Grub Burger Bar,4.0,170,2.0
+833,W7IXC4Bq5jXOQVV6Cu1OSA,Wawa,2.0,12,1.0
+834,yvVJxONMGqOzO1ouw77J3Q,Constitution Yards,4.0,55,2.0
+835,Sm3LFPwOdn975HvcfrqDOw,QDOBA Mexican Eats,2.5,23,1.0
+836,86vyH37R2Edv0zKBc1lQyg,King Garden,3.5,16,1.0
+837,PXVw9DhzDDtq0TGcsdYsIQ,Cannon's Custom Cakes Bakery,2.5,52,2.0
+838,K8kw1ylsCTeEAAOY179feQ,Sbarro,3.5,6,1.0
+839,1fwJTdGs4Fsm_mguZX6SFQ,Sweets To You by Ginger,2.5,25,2.0
+840,dmj-6zHdO8R76-pdqiV8nw,Popeyes,2.0,21,1.0
+841,rXieH75VhdR2pQhf1CWxhQ,Adams’ Rib & Grille,3.5,22,
+842,q7J8uBa2o8a1iac_8x741Q,Checkers,2.0,13,
+843,u7bo1o8ry-fvb6PbvtZJzQ,Poke Bros,4.0,68,2.0
+844,BKlw_Ao7FK01I5j9w_EXwA,Cocina Lolo,3.5,47,2.0
+845,EMVKCwf8Ck0XsADY_kCWkw,Wilma's,4.0,7,
+846,-L4ZVlzmrVKCs6F7ucgikA,Asnan Sushi Bar & Asian Cuisine,2.0,6,2.0
+847,ym3e_a1L4gyKZWU1-LuRYQ,Cosi,3.0,11,2.0
+848,a2NKecVY4wof4NGSc4hFXg,European Bistro,4.0,19,2.0
+849,iQa7kNO5jMkGeJCJzbCPGg,Nordstrom Ebar Artisan Coffee,4.0,14,2.0
+850,i92ouDpINZXfL5gov7I5Kw,Pat's Pizza & Pasta,2.5,21,1.0
+851,7U7IgKCBvUqHDoZvmunuAA,McDonald's,1.5,16,1.0
+852,OO5oDYrIYlJaoFAFetrW-g,Wawa,3.0,7,
+853,V71KzO8mXPK7E8no2FN8sw,McDonald's,1.5,6,1.0
+854,2WOZLyI8pRNF5HSl8RAeaQ,Seasons Pizza,2.5,32,1.0
+855,lR5MEog_4Xr4Wkw5bEWSNg,Pat's Pizzeria,3.0,16,1.0
+856,eunaT5pF5ffyNUm0O8Zcrg,Troy Pizza & Family Restaurant,2.5,28,1.0
+857,oC43ya3FFAG256bEXyXm2g,Saladworks,3.0,44,2.0
+858,RnF36ZCuwHxpoFXf2aXX1g,Pochi,4.5,114,2.0
+859,OQQEhFY3Nvb5_jkmcQQDyw,PrimoHoagies,3.0,24,2.0
+860,Z3QKriJ_9J8gIy8C4QzaIw,IHOP,2.5,39,1.0
+861,e7eiRgVzH0v3GXDGURgf9A,Sterling Grille,3.5,11,1.0
+862,uSRW0_iRB_Ri_qO_fz9VjA,Two Stones Pub,3.5,51,2.0
+863,WhQbHbOGtYas5LdNr2OQNQ,Island Fin Poke,5.0,8,
+864,giGFpZkRy89cUzgTuyfNGA,Hibachi Sushi and Super Buffet,2.5,27,2.0
+865,9kRo0ULH--EDQwI69Shw-w,Alex's Seafood Restaurant & Clam Bar,3.5,52,2.0
+866,FN1sLS5hfMydZX94SYD1QA,Claymont Steak Shop,2.5,73,2.0
+867,XuH43OxI-NmA5-KbM5auvQ,Harry's Fish Market & Grill,3.0,9,2.0
+868,riwJWxj4850tGBhRahDt7g,Sushi Sumo,4.5,191,2.0
+869,5c_jYz4IolgGdrJLabSTew,Casapulla's Elsmere Steak & Sub Shop,4.0,49,1.0
+870,8hWGADp-m3NzX1-oSXPwPQ,Burger King,2.5,7,1.0
+871,Kk9WgsCJEclBbhWXxeL1TQ,Gyro Stop,4.5,5,1.0
+872,NsTtjA9ZuJVr6pHApkOXsw,Anthony's Coal Fired Pizza,3.5,158,2.0
+873,TB9Oi-HliFy7yycFFzvm9w,Taqueria Rojas,3.0,5,
+874,8aZFTAunMPJhv0Zz4jHWGw,Sweeneys Bakery And Ice Cream,3.5,22,2.0
+875,OSjSbJEyIkey6tcTgL9y3Q,Happy Fortune Restaurant,3.5,20,1.0
+876,T7pfUqFPaxJWLquFePSLcw,Catherine Rooney's,3.0,73,2.0
+877,Uz4ezmjEr2SawQL3zRcoZQ,Dom's N.Y. Style Pizzeria,4.0,83,1.0
+878,K32hC2muzKilZkUs9RJhcw,Famous Rivera Grill,3.5,39,2.0
+879,pe4nl6zFDnoYx9ZaMOl-3w,Capriotti's Sandwich Shop,2.5,48,1.0
+880,FrkGJp1WIxpFFT07Qbos5w,The Well Coffeehouse and Marketplace,4.5,44,2.0
+881,q2SSz2-nRYWeFG2EoUMuZQ,Santa Fe Mexican Grill - Wilmington,4.0,33,2.0
+882,ojmk4fKI4_8ZqRggwlxUpw,Leo & Jimmy's Delicatessen,4.0,14,1.0
+883,ELX24jqeRWZbR-Dq6wrnLQ,Crafty Crab,3.5,7,
+884,6tQrTyDTs5hWh5e4LlPLCg,McDonald's,1.5,14,1.0
+885,tILA8ctsD_OZIcM2IfSyQA,Cafe SiTALY,4.5,169,2.0
+886,vRdQizZLDFVh7TA9koOq2Q,Union City Grille,3.5,36,2.0
+887,ELgR35KIlpuTMeWi6tFP7g,Mikimotos Japanese Restaurant & Sushi Bar,3.5,269,2.0
+888,ifEkf8JxP3RCBeszcIGLww,Scalessa's,5.0,176,2.0
+889,VbzoVWEPSfzaIGBq4KlVwQ,Soybean Asian Grille,4.5,167,2.0
+890,z9i9Tym7T64lMDg70Ii9hw,Stoney's British Pub,4.0,104,2.0
+891,QNoDyRjQTmt2Pt1K4xHW3Q,Wade's,4.5,5,1.0
+892,96z5LhtPc2RQgNabJvrCJg,The Spare Rib,4.5,9,2.0
+893,kBt6_fX1pZzizIMXDtD7og,New York Bagel Cafe & Deli,2.5,9,1.0
+894,zLDQl0CEv3WNSHAB1g8xXg,Hibachi Japanese Steak House,2.5,35,2.0
+895,gd15-d7r2joRjkcXywMWUw,LongHorn Steakhouse,3.5,10,
+896,JvFDMS5yryf3lDwUPAb6OQ,Skyline Grill,2.0,7,2.0
+897,Tr-8_aJ7VgywoRk3sMC4Ww,Ioannoni's Bullroasters,4.5,182,2.0
+898,nXZS5W8-4VztBpjYIinpNw,No. 1 China Restaurant,3.0,12,1.0
+899,P_1mSczqlosmm4ahM8v6LQ,North Quarter Creole,3.5,32,2.0
+900,SRg4QRR7xQrZ6cp9u8VX9g,Potstickers Asian Grill,3.5,220,2.0
+901,r6MBlUIS8_U1JINh8HJZTw,Ciao Pizza & Pasta,3.5,23,1.0
+902,yCgoR5GRjPXZXpdwHMUqTw,Burger King,1.5,18,1.0
+903,Ni1KrIwBlv489_4GTzXGEQ,Atami Grill & Sushi Express,2.5,52,1.0
+904,nTIbCcAYMRrzUm29h0dk8Q,DiMeo's Pizza,4.0,140,2.0
+905,-M9uwwh6jHbzjHOm2N5fHg,The Legend Restaurant and Bakery,4.0,38,2.0
+906,bDFk_io_k-6To1ul3h3tuA,Dunkin',3.5,10,1.0
+907,CZh7ag6mlr-4AMNkiEzHRg,Krispy Krunchy Chicken Pizza Grill,4.0,5,
+908,XIBoAKSB52c3BYXnbLpgaA,Oldbanks Bistro,4.0,46,2.0
+909,KMxOsLntxetLSVUIf-uG4w,Ed's Hot Dogs,5.0,8,1.0
+910,UK-v9kE16bUrifXmzfFxUw,KFC,2.5,7,1.0
+911,oCo71AEK7x-CGpzVg56wRA,Kennedy Fried Chicken,3.5,9,1.0
+912,aQNDJ0WyuJZK-ZwkZqJq4g,Rays Market,3.0,5,1.0
+913,z00F0RSAGimvSU9IrTevOw,McDonald's,1.0,5,1.0
+914,W0hyjefq4YWl-uV-Hye5Mw,Fat Rick's BBQ and Catering,4.0,9,
+915,MxfQ_HrOBrSPSVk24CAb9A,Jamba,3.0,24,1.0
+916,h9tUG_bLdX30YAED9q0Fsg,Claymont Steak Shop,3.0,171,2.0
+917,aeZmTIjW5MbEARJC0Ch1rQ,El Salvadoreno,4.0,9,
+918,V0ffRTuD2eZkUn6dyZAgRw,Arby's,3.0,12,1.0
+919,FNDX_9BaClbnmJyZI0mndQ,Saladworks,2.5,10,1.0
+920,YNWEM2NVocUl6d74yRvpug,Golden City Chinese Cuisine,3.5,12,1.0
+921,HmeKJIWJaJ7u8V9NhnZIEg,The Simple Greek,3.5,26,1.0
+922,bS6aPaOR0X6OH4eFeEeUfw,Krazy Kats Restaurant,4.0,58,3.0
+923,MAQ3xsIxI9wbvilPYkvmVQ,Kampo Garden Chinese Food,2.5,16,1.0
+924,_PlmFAlaUQHdQN6rli0gzA,Wawa,2.5,8,2.0
+925,6X1uRuf4Ykdt0prs_xqz6w,Hong Kong Chinese Food Eat In & Take Out,4.0,16,
+926,f3qKagX8q2lnz1O6Ulck7w,PureBread Deli,4.0,56,2.0
+927,7L6pFDZN7jR2KqrDuxy-ng,Hooters,3.5,6,
+928,wu4zVzAeTIClugvU_X4meA,Bally's Chinese Restaurant,3.5,23,1.0
+929,IrD6smDjZM-Rt7B-SJDp4g,China Wok,3.5,8,
+930,iR5MI7ch9z3AYiqxBVLJLw,Sullivan's Steakhouse,3.5,207,3.0
+931,9zOydjYJlIqsnJYtWDNP-A,Maiale,5.0,21,1.0
+932,iWFK7U-wBR-68X0VFrSkNA,Booth House Tavern,4.5,11,
+933,9tQG4U90-x7Ha2_Tdg4Xmw,Boston Market,3.0,13,1.0
+934,kLWpuSBJ0MGM7XRNlg0EEQ,Mojo Loco,4.0,19,2.0
+935,v6AlogsSBf4sxrVHcSnMHQ,Samson's Country Maid,4.0,6,1.0
+936,J4zpaa-HozFmRt4hYGlBuw,Arby's,3.5,6,1.0
+937,Q6_cM-2YjN10hgfs35Ml6g,Ruby Tuesday Restaurant,2.0,6,2.0
+938,lxuRSOi2RCW2yu0HT7GBEQ,Krispy Krunchy Chicken,4.0,5,
+939,YIaZeWePIaddftxUoxRh5g,Chuck E. Cheese,2.0,19,
+940,UREmwQBCMimpOuFyKPW3xw,Burger King,2.0,24,1.0
+941,B5S_5MCYNWvcz0qn6dnTUw,Checkers,2.0,23,1.0
+942,P9pwQW2d-M1YgYQH71K-qw,Olympic Subs & Steaks,4.5,64,1.0
+943,E-3TJ8yFXpUSv1aThsVfZw,King Garden,4.0,10,1.0
+944,nN8plg8HmBSb4c7zdCZALQ,Bull Bay Cuisine,2.5,27,2.0
+945,7UFRDoDdwC3_Pt77FzaJfg,Brew Haha!,4.0,5,1.0
+946,ZlgwjiDDgsXl_rzR3XYwhw,Dash In,2.5,6,
+947,Z53I9xwy0aMRy577GuM1KQ,Kapow Food Truck,4.0,10,2.0
+948,ZlOWflwsH8mMtyMlQgYWZw,Nal Restaurant,4.0,31,
+949,sSEKLTDGKdvOqevbfoBbiw,Cavanaugh's Restaurant,4.0,24,2.0
+950,EXEzZQObGgWlQEHqZs3fLg,Seafood Stop,3.0,6,
+951,aAslC0l5mZB8oJNbld0byA,McGlynns Pub,3.0,48,2.0
+952,rDy9qZZEq-mbKExVQNTaqQ,Toscana to Go,3.0,21,2.0
+953,AaRpbFg8-dazKyKmoh65tQ,Goodfellas Steaks & Subs,3.5,23,1.0
+954,_95ZY2UZrasSfuoDD_E1YA,Suki Hana,3.0,50,1.0
+955,Pn8fn5d95xGhEd-LADm2zw,Tacos Don Vicente,5.0,8,1.0
+956,f5KbR9Ty05qgJvFbMm7fjA,The House of William and Merry,4.5,156,3.0
+957,QENmoWh-mSKD8cBaK8lYhw,JB McGinnes Pub and Grille,3.0,10,1.0
+958,N9L1B3TD57wyDl7f3Awlcg,KFC,1.0,31,1.0
+959,e_OEKGsZEndFkqcVyVb3Rw,Lotsa Pasta Restaurant & Lounge,2.5,9,2.0
+960,2O2K6SXPWv56amqxCECd4w,The Plum Pit,4.5,14,1.0
