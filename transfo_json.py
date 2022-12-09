@@ -29,13 +29,13 @@ print("------- Création de reviews.csv -------\n")
 reviews = yelp_review[["review_id","stars","useful","cool"]]
 reviews['stars'].apply(lambda x : int(x))
 reviews = reviews.set_index("review_id")
-reviews.index.name = "reviews_id:ID(reviews)"  
+reviews.index.name = "review_id:ID(reviews)"  
 reviews.to_csv(DB_PATH+'reviews.csv')
 
 ########## restaurant.csv ##########
 print("------- Création de restaurant.csv -------\n")
 df_rest = yelp_restaurants.copy()
-df_rest = df_rest[["business_id", "name", "stars", "review_count"]]
+df_rest = df_rest[["business_id", "name", "review_count"]]
 price_range = []
 
 for index, item in yelp_restaurants.iterrows():
