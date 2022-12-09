@@ -1,0 +1,32 @@
+2.1)
+match (n:users) return count(n) ----- 23082
+match (n:cities) return count(n) ----- 18
+match (n:reviews) return count(n) ----- 49150
+match (n:ambiences) return count(n) ----- 9
+match (n:categories) return count(n) ----- 192
+match (n:restaurants) return count(n) ----- 961
+
+2.2)
+match ()-[n:friends]->() return count(n) ----- 42776
+match ()-[n:located]->() return count(n) ----- 961
+match ()-[n:restAmb]->() return count(n) ----- 505
+match ()-[n:restCat]->() return count(n) ----- 4218
+match ()-[n:revRest]->() return count(n) ----- 49150
+match ()-[n:reviewed]->() return count(n) ----- 49150
+
+2.4)
+match (r:restaurants)-[l:restAmb]->(a:ambiences) 
+where r.name="8th & Union Kitchen"
+return a.ambience
+----- casual / trendy / classy
+
+2.6)
+match (r:restaurants)<-[:revRest]-(:reviews)<-[:reviewed]-(a:users)-[:friends]->(b:users)-[:reviewed]->(:reviews)-[:revRest]->(r:restaurants)
+where r.name="Tokyo Sushi"
+return distinct a.name,b.name
+----- (Karen, Scott) / (Scott,Karen)
+
+2.8) match (a:ambiences)<-[:restAmb]-(r:restaurants)<-[:revRest]-(:reviews)<-[:reviewed]-(u:users)-[:friends]->(v:users)-[:reviewed]->(:reviews)-[:revRest]->(x:restaurants)-[:restAmb]->(a:ambiences)
+where r.name="Tokyo Sushi" and x <> r
+return distinct v.name
+----- 280 users
