@@ -4,11 +4,15 @@ from operator import itemgetter
 
 class MoteurReco:
 
-    def __init__(self, alpha, beta, gamma, delta):
+    def __init__(self, alpha, beta, gamma, delta, city, ambiences, categories, price_range):
         self.alpha = alpha
         self.beta = beta
         self.gamma = gamma
         self.delta = delta
+        self.city = city.lower()
+        self.ambiences = ambiences
+        self.categories = [x.lower().replace(" ","") for x in categories]
+        self.price_range = price_range
 
         self.graph = Graph("bolt://localhost:11006", auth=("neo4j","1234"))
 
@@ -75,6 +79,36 @@ class MoteurReco:
         for user, count in res:
             self.n_cool_reviews[user] = count
 
+        # Dictionnaire entre user_id et le nombre de reviews positives pour chaque ambiance du restaurant
+        self.n_pos_reviews_amb = {id : 0 for id in self.users_id}
+        for amb in self.ambiences:
+            q=f"match (u:users)-[:reviewed]->(r:reviews)-[]->(:restaurants)-[]->(a:ambiences) with u,r,a where toInteger(r.stars)>=4 and a.ambience='{amb}' return u.user_id,count(r)"
+            res=self.graph.run(q).to_table()
+            for user, count in res:
+                self.n_pos_reviews_amb[user] += count
+
+        # Nombre d'ambiances
+        self.n_ambiences = len(self.ambiences)
+
+        # Dictionnaire entre user_id et le nombre de reviews positives pour chaque categorie du restaurant
+        self.n_pos_reviews_cat = {id : 0 for id in self.users_id}
+        for cat in self.categories:
+            q=f"match (u:users)-[:reviewed]->(r:reviews)-[]->(:restaurants)-[]->(c:categories) with u,r,c where toInteger(r.stars)>=4 and c.category='{cat}' return u.user_id,count(r)"
+            res=self.graph.run(q).to_table()
+            for user, count in res:
+                self.n_pos_reviews_cat[user] += count
+
+        # Nombre de catégories
+        self.n_categories = len(self.categories)
+
+        # Dictionnaire entre user_id et le nombre de reviews positives pour le même price range du restaurant
+        self.n_pos_reviews_pr = {id : 0 for id in self.users_id}
+        q=f"match (u:users)-[:reviewed]->(r:reviews)-[]->(rest:restaurants) with u,r,rest where toInteger(r.stars)>=4 and toInteger(rest.price_range)={self.price_range} return u.user_id,count(r)"
+        res=self.graph.run(q).to_table()
+        for user, count in res:
+            self.n_pos_reviews_pr[user] += count
+
+
 
     ##### S1 : Score Social Immédiat #####
     def score_social_imm(self, u):
@@ -105,28 +139,28 @@ class MoteurReco:
         return (self.score_val_comm(u) + self.score_cool(u))/2
 
     ##### S6 : Score d'Adéquation aux Ambiances #####
-    def score_adeq_amb():
-        return None
+    def score_adeq_amb(self, u):
+        return self.n_pos_reviews_amb[u]/(self.n_ambiences * self.n_reviews[u])
 
     ##### S7 : Score d'Adéquation aux Catégories #####
-    def score_adeq_cat():
-        return None
+    def score_adeq_cat(self,u):
+        return self.n_pos_reviews_cat[u]/(self.n_categories * self.n_reviews[u])
 
     ##### S8 : Score d'Adéquation aux Tarifs Pratiqués #####
-    def score_adeq_tarifs():
-        return None
+    def score_adeq_tarifs(self,u):
+        return self.n_pos_reviews_pr[u]/self.n_reviews[u]
 
     ##### Facteur d'Adéquation au Restaurant #####
-    def f_adeq_rest():
-        return (score_adeq_amb() + score_adeq_cat() + score_adeq_tarifs())/3
+    def f_adeq_rest(self,u):
+        return (self.score_adeq_amb(u) + self.score_adeq_cat(u) + self.score_adeq_tarifs(u))/3
 
     ##### Facteur d'Adéquation Géographique #####
-    def f_geographique():
-        return None
+    def f_geographique(self,u):
+        return 0
 
     ##### Score Utilisateur #####
     def score_user(self, id_user):
-        return self.alpha*self.f_centralite(id_user) + self.beta*self.f_val_comm(id_user) #+ gamma*f_adeq_rest() + delta*f_geographique()
+        return self.alpha*self.f_centralite(id_user) + self.beta*self.f_val_comm(id_user) + self.gamma*self.f_adeq_rest(id_user) + self.delta*self.f_geographique(id_user)
 
     
     ##### Mise à jour des scores de tous les utilisateurs #####
@@ -142,8 +176,13 @@ class MoteurReco:
 
 if __name__=="__main__":
     alpha, beta, gamma, delta = 0.3, 0.3, 0.3, 0.1
+    
+    city='Wilmington'
+    ambiences=['casual']
+    categories=['Pizza','Burgers','Italian']
+    price_range=1
 
-    mot = MoteurReco(alpha, beta, gamma, delta)
+    mot = MoteurReco(alpha, beta, gamma, delta, city, ambiences, categories, price_range)
     mot.update_scores()
     print(mot.get_best_users())
     
