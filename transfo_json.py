@@ -20,7 +20,7 @@ yelp_restaurants["categories"] = yelp_restaurants["categories"].apply(lambda x :
 ########## users.csv ##########
 print("------- Création de users.csv -------\n")
 users = yelp_user[["user_id","name","review_count","friends","fans"]]  
-users.set_index("user_id")
+users = users.set_index("user_id")
 users.index.name = "user_id:ID(users)"
 users.to_csv(DB_PATH+'users.csv')
 
@@ -35,7 +35,6 @@ reviews.to_csv(DB_PATH+'reviews.csv')
 print("------- Création de restaurant.csv -------\n")
 df_rest = yelp_restaurants.copy()
 df_rest = df_rest[["business_id", "name", "stars", "review_count"]]
-
 price_range = []
 
 for index, item in yelp_restaurants.iterrows():
@@ -49,6 +48,7 @@ for index, item in yelp_restaurants.iterrows():
         price_range.append(None)
         
 df_rest['price_range'] = price_range  
+df_rest = df_rest.set_index("business_id")
 df_rest.index.name = "restaurant_id:ID(restaurants)"
 df_rest.to_csv(DB_PATH+'restaurants.csv')
 
@@ -109,7 +109,8 @@ df_category.to_csv(DB_PATH+'categories.csv')
 ########## located_relationships.csv ##########
 print("------- Création de located_relationships.csv -------\n")
 df_located = df_city.reset_index().merge(yelp_restaurants, how="right", on='city')[["business_id","city_id:ID(cities)"]]
-df_located = df_located.rename(columns={"business_id": "restaurant_id"})
+df_located = df_located.rename(columns={"business_id": ":START_ID(restaurants)", "city_id:ID(cities)":":END_ID(cities)"})
+df_located = df_located.set_index(":START_ID(restaurants)")
 df_located.to_csv(DB_PATH+'located_relationships.csv')
 
 ########## restCat_relationships.csv ##########
@@ -123,25 +124,21 @@ for val in yelp_restaurants[['business_id','categories']].values:
         list_cat.append(cat)
         list_rest.append(val[0])
 
-df_restCat = pd.DataFrame({"restaurant_id": list_rest, "category_id":list_cat})
+df_restCat = pd.DataFrame({":START_ID(restaurants)": list_rest, ":END_ID(categories)":list_cat})
+df_restCat = df_restCat.set_index(":START_ID(restaurants)")
 df_restCat.to_csv(DB_PATH+'restCat_relationships.csv')
 
 ########## friends_relationships.csv ##########
 print("------- Création de friends_relationships.csv -------\n")
-friends_relationships = pd.DataFrame(columns = ["user_id","friend_id"])
-
-for i in tqdm(users.index):
-    row = users.iloc[i]
-    user_id = row['user_id']
-    friends = row["friends"]
-    relationships = []
-    columns = ["user_id","friend_id"]
+relationships = []
+columns = [":START_ID(users)",":END_ID(users)"]
+for user_id, user in tqdm(users.iterrows()):
+    friends = user["friends"]
     for friend_id in friends:
         relationships.append([user_id,friend_id])
-    
-    df_to_concat = pd.DataFrame(data=relationships,columns=columns)
-    friends_relationships_csv = pd.concat([friends_relationships,df_to_concat])
 
+friends_relationships = pd.DataFrame(data=relationships,columns=columns)
+friends_relationships = friends_relationships.set_index(":START_ID(users)")
 friends_relationships.to_csv(DB_PATH+'friends_relationships.csv')
 
 ########## reviewed_relationships.csv ##########
