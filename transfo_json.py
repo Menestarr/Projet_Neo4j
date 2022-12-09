@@ -19,7 +19,7 @@ yelp_restaurants["categories"] = yelp_restaurants["categories"].apply(lambda x :
 
 ########## users.csv ##########
 print("------- Création de users.csv -------\n")
-users = yelp_user[["user_id","name","review_count","friends","fans"]]  
+users = yelp_user[["user_id","name","review_count","fans"]]  
 users = users.set_index("user_id")
 users.index.name = "user_id:ID(users)"
 users.to_csv(DB_PATH+'users.csv')
@@ -27,6 +27,7 @@ users.to_csv(DB_PATH+'users.csv')
 ########## reviews.csv ##########
 print("------- Création de reviews.csv -------\n")
 reviews = yelp_review[["review_id","stars","useful","cool"]]
+reviews['stars'].apply(lambda x : int(x))
 reviews = reviews.set_index("review_id")
 reviews.index.name = "reviews_id:ID(reviews)"  
 reviews.to_csv(DB_PATH+'reviews.csv')
@@ -132,7 +133,7 @@ df_restCat.to_csv(DB_PATH+'restCat_relationships.csv')
 print("------- Création de friends_relationships.csv -------\n")
 relationships = []
 columns = [":START_ID(users)",":END_ID(users)"]
-for user_id, user in tqdm(users.iterrows()):
+for user_id, user in tqdm(yelp_user.iterrows()):
     friends = user["friends"]
     for friend_id in friends:
         relationships.append([user_id,friend_id])
