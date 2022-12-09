@@ -1,0 +1,27 @@
+Q3 :
+
+MATCH (res:restaurants)-[r:restCat]->(cat:categories)
+WHERE res.name = "8th & Union Kitchen"
+RETURN cat.category
+
+Q5 :
+
+MATCH (rev:reviews)-[r:revRest]->(res:restaurants)
+WHERE res.name = "Tokyo Sushi"
+RETURN rev
+
+Q7 :
+
+MATCH (u:users)-[r:friends]->(friend:users)
+WITH u, count(friend) AS u_friends 
+ORDER BY u_friends DESC
+LIMIT 1
+RETURN u.name, u_friends
+
+Q9
+
+MATCH (u1:users)-[:reviewed]->(rev1:reviews WHERE toInteger(rev1.stars) >= 4)-[:revRest]->(res:restaurants)<-[:revRest]-(rev2:reviews WHERE toInteger(rev2.stars) >= 4)<-[:reviewed]-(u2:users)
+WITH u1, u2, res, count(res) AS res_count
+WHERE res_count >= 10
+WITH count(u1) AS pair_count
+RETURN pair_count
