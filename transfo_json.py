@@ -143,31 +143,31 @@ friends_relationships.to_csv(DB_PATH+'friends_relationships.csv')
 
 ########## reviewed_relationships.csv ##########
 print("------- Création de reviewed_relationships.csv -------\n")
-reviewed_relationships = pd.DataFrame(columns=["user_id","review_id"])
+reviewed_relationships = pd.DataFrame(columns=[":START_ID(users)",":END_ID(reviews)"])
 
 for i in tqdm(yelp_review.index):
     row = yelp_review.iloc[i]
     review_id = row["review_id"]
     user_id = row["user_id"]
-    df_to_concat = pd.DataFrame(data=[[user_id, review_id]], columns=["user_id", "review_id"])
+    df_to_concat = pd.DataFrame(data=[[user_id, review_id]], columns=[":START_ID(users)",":END_ID(reviews)"])
     
     reviewed_relationships = pd.concat([reviewed_relationships,df_to_concat])
 
-reviewed_relationships.to_csv(DB_PATH+'reviewed_relationships.csv')
+reviewed_relationships.to_csv(DB_PATH+'reviewed_relationships.csv', index=False)
 
 ########## revRest_relationships.csv ##########
 print("------- Création de revRest_relationships.csv -------\n")
-revRest_relationships = pd.DataFrame(columns = ["review_id","restaurant_id"])
+revRest_relationships = pd.DataFrame(columns = [":START_ID(reviews)",":END_ID(restaurants)"])
 
 for i in tqdm(yelp_review.index):
     row = yelp_review.iloc[i]
     review_id = row["review_id"]
     restaurant_id = row["business_id"]
-    df_to_concat = pd.DataFrame(data=[[review_id, restaurant_id]], columns=["review_id", "restaurant_id"])
+    df_to_concat = pd.DataFrame(data=[[review_id, restaurant_id]], columns=[":START_ID(reviews)",":END_ID(restaurants)"])
     
     revRest_relationships = pd.concat([revRest_relationships,df_to_concat])
 
-revRest_relationships.to_csv(DB_PATH+'revRest_relationships.csv')
+revRest_relationships.to_csv(DB_PATH+'revRest_relationships.csv', index=False)
 
 ########## revAmb_relationships.csv ##########
 print("------- Création de revAmb_relationships.csv -------\n")
@@ -188,7 +188,7 @@ def ambs_to_dict(ambs):
     except:
         return {}
 
-ambiences = pd.read_csv(DB_PATH+"ambiences.csv")
+ambiences = df_ambience
 
 ambiences_id = {}
 for i in df_ambience.index:
@@ -196,7 +196,7 @@ for i in df_ambience.index:
     ambiences_id[row["ambience"]] = i
     
 
-restAmb = pd.DataFrame(columns = ["restaurant_id", "ambience_id"])
+restAmb = pd.DataFrame(columns = [":START_ID(restaurants)", ":END_ID(ambiences)"])
 
 for i in tqdm(yelp_restaurants.index):
     row = yelp_restaurants.iloc[i]
@@ -208,11 +208,11 @@ for i in tqdm(yelp_restaurants.index):
             if b == "True":
                 data.append([restaurant_id, ambiences_id[amb]])
     
-        df_to_concat = pd.DataFrame(data=data, columns=["restaurant_id", "ambience_id"])
+        df_to_concat = pd.DataFrame(data=data, columns=[":START_ID(restaurants)", ":END_ID(ambiences)"])
     
         restAmb = pd.concat([restAmb,df_to_concat])
         
     except:
         pass
 
-restAmb.to_csv(DB_PATH+"restAmb_relationships.csv")
+restAmb.to_csv(DB_PATH+"restAmb_relationships.csv", index=False)
