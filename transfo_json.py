@@ -133,7 +133,8 @@ df_restCat.to_csv(DB_PATH+'restCat_relationships.csv')
 print("------- Création de friends_relationships.csv -------\n")
 relationships = []
 columns = [":START_ID(users)",":END_ID(users)"]
-for user_id, user in tqdm(yelp_user.iterrows()):
+for _, user in tqdm(yelp_user.iterrows()):
+    user_id = user["user_id"]
     friends = user["friends"]
     for friend_id in friends:
         relationships.append([user_id,friend_id])

@@ -27,11 +27,37 @@ def score_social_intr():
 def f_centralite():
     return (score_social_imm() + score_social_2() + score_social_intr())/3
 
-##### S4 : Score Social Intrinsèque #####
-def score_val_comm()
+##### S4 : Score de Validité des Commentaires #####
+def score_val_comm():
+    return None
+
+##### S5 : Score de Coolitude #####
+def score_cool():
+    return None
 
 ##### Facteur de Validité des Commentaires #####
 def f_val_comm():
+    return (score_val_comm() + score_cool())/2
+
+##### S6 : Score d'Adéquation aux Ambiances #####
+def score_adeq_amb():
     return None
 
+##### S7 : Score d'Adéquation aux Catégories #####
+def score_adeq_cat():
+    return None
 
+##### S8 : Score d'Adéquation aux Tarifs Pratiqués #####
+def score_adeq_tarifs():
+    return None
+
+##### Facteur d'Adéquation au Restaurant #####
+def f_adeq_rest():
+    return (score_adeq_amb() + score_adeq_cat() + score_adeq_tarifs())/3
+
+##### Facteur d'Adéquation Géographique #####
+def f_geographique():
+    return None
+
+def score_user(alpha, beta, gamma, delta):
+    return alpha*f_centralite() + beta*f_val_comm() + gamma*f_adeq_rest() + delta*f_geographique()
