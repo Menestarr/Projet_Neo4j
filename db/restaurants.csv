@@ -1,4 +1,4 @@
-restaurant_id,business_id,name,stars,review_count,price_range
+restaurant_id:ID(restaurants),business_id,name,stars,review_count,price_range
 0,Dy91wdWkwtI_qgjAIZ0Niw,Taqueria Los Primos,4.0,23,1.0
 1,_Oksx3ALgKLRVxeAR8l_qA,V-Trap Kitchen and Lounge,5.0,13,2.0
 2,_NhT0A3LUEd75L_cEXf2_A,Season's Pizza,3.0,7,

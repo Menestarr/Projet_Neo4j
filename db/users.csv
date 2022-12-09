@@ -1,4 +1,4 @@
-,user_id,name,review_count,friends,fans
+user_id:ID(users),user_id,name,review_count,friends,fans
 0,XLs_PhrJ7Qwn_RfgMM7Djw,Weili,90,[],1
 1,IpLRJY4CP3fXtlEd8Y4GFQ,Robyn,518,"['y3Wtx1pOvTiqsJRkjceXiw', '_BcWyKQL16ndpBdggh2kNA', 'lRRuTimITgwzoXLIM3g9qw', 'z02XKjGqJMONH59_lUHlTQ', '47K1MpOBhigOvjuBcDbm7Q', '2-RlTk9dJNpj85MR2B46Cg', '_hPjqzQDiyw1-4U_IAETpg', 'dhLizr4a2oydrv15y56r0A', 'rkxGrjk2WeAT5ZMfChT3kw', 'pbCb0Tz0KQ0kkgaxzhWhoA', 'Ed0GuUa_1UjbSk8qaQsHlA', '_LNCGYNoGKxyVUag3EG0-g', 'B9iPTih0dmpZn6fRyZnLLg', 'gTrKXmAx1ytdvh1xutIlfA', 'u1gUbwyeBe8mtV97hZyImg', 'UiRx8jyS6H957ItwFsP2nQ', 'IPxJLWpKptzpTWlfjFiuHA', 'srETv2HpH9fQ-7wCvCAQng', 'cUB2WhICFuSe7DwXAIoo0g', 'vU9_lZqJQIR8btUYw7fqxA', 'pLZIZXIebqEcrX7IVKoJRg', 'IWxNILja-WvurTuJWJ4skA', '63hpZgj7peTKizDs4zeKZA']",35
 2,0juMoWXC7z4c7LgQP2s3sA,JR,199,"['46Wi08T5D3phf3SMgi7U3w', 'HUxktqjf5kJm0tIHTCCwsQ', 'X-8WUdJ1hYidYXQygzTEBw', 'sGaoPWB_p1aOm5z9cnV3Aw']",9

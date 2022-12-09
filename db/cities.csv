@@ -1,4 +1,4 @@
-city_id,city
+city_id:ID(cities),city
 0,wilmington
 1,newark
 2,newcastle

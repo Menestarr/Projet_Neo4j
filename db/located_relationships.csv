@@ -1,4 +1,4 @@
-,restaurant_id,city_id
+,restaurant_id,city_id:ID(cities)
 0,Dy91wdWkwtI_qgjAIZ0Niw,0
 1,_Oksx3ALgKLRVxeAR8l_qA,0
 2,_NhT0A3LUEd75L_cEXf2_A,0

@@ -1,4 +1,4 @@
-category_id,category
+category_id:ID(categories),category
 0,mexican
 1,restaurants
 2,arts&entertainment

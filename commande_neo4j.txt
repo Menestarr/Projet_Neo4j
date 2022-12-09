@@ -1,0 +1,1 @@
+.\bin\neo4j-admin import --database=graph.db --nodes=ambiences=D:/Documents/GitHub/Projet_Neo4j/db/ambiences.csv --nodes=categories=D:/Documents/GitHub/Projet_Neo4j/db/categories.csv --nodes=cities=D:/Documents/GitHub/Projet_Neo4j/db/cities.csv --trim-strings=true --force --multiline-fields=true

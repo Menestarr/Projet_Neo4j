@@ -20,11 +20,15 @@ yelp_restaurants["categories"] = yelp_restaurants["categories"].apply(lambda x :
 ########## users.csv ##########
 print("------- Création de users.csv -------\n")
 users = yelp_user[["user_id","name","review_count","friends","fans"]]  
+users.set_index("user_id")
+users.index.name = "user_id:ID(users)"
 users.to_csv(DB_PATH+'users.csv')
 
 ########## reviews.csv ##########
 print("------- Création de reviews.csv -------\n")
-reviews = yelp_review[["review_id","stars","useful","cool"]]  
+reviews = yelp_review[["review_id","stars","useful","cool"]]
+reviews = reviews.set_index("review_id")
+reviews.index.name = "reviews_id:ID(reviews)"  
 reviews.to_csv(DB_PATH+'reviews.csv')
 
 ########## restaurant.csv ##########
@@ -45,7 +49,7 @@ for index, item in yelp_restaurants.iterrows():
         price_range.append(None)
         
 df_rest['price_range'] = price_range  
-df_rest.index.name = "restaurant_id"
+df_rest.index.name = "restaurant_id:ID(restaurants)"
 df_rest.to_csv(DB_PATH+'restaurants.csv')
 
 ########## cities.csv ##########
@@ -58,7 +62,7 @@ for city in yelp_restaurants['city']:
         cities.append(city)
 
 df_city = pd.DataFrame(cities, columns=['city'])
-df_city.index.name = "city_id"
+df_city.index.name = "city_id:ID(cities)"
 df_city.to_csv(DB_PATH+'cities.csv')
 
 ########## ambiences.csv ##########
@@ -81,7 +85,7 @@ for attr in yelp_restaurants['attributes']:
         pass
         
 df_ambience = pd.DataFrame(list_amb, columns=['ambience'])
-df_ambience.index.name = "ambience_id"
+df_ambience.index.name = "ambience_id:ID(ambiences)"
 df_ambience.to_csv(DB_PATH+'ambiences.csv')
 
 ########## category.csv ##########
@@ -95,7 +99,7 @@ for cats in yelp_restaurants['categories']:
             list_cat.append(cat)
 
 df_category = pd.DataFrame(list_cat, columns=['category'])
-df_category.index.name = "category_id"
+df_category.index.name = "category_id:ID(categories)"
 df_category.to_csv(DB_PATH+'categories.csv')
 
 
@@ -104,7 +108,7 @@ df_category.to_csv(DB_PATH+'categories.csv')
 
 ########## located_relationships.csv ##########
 print("------- Création de located_relationships.csv -------\n")
-df_located = df_city.reset_index().merge(yelp_restaurants, how="right", on='city')[["business_id","city_id"]]
+df_located = df_city.reset_index().merge(yelp_restaurants, how="right", on='city')[["business_id","city_id:ID(cities)"]]
 df_located = df_located.rename(columns={"business_id": "restaurant_id"})
 df_located.to_csv(DB_PATH+'located_relationships.csv')
 
