@@ -1,6 +1,7 @@
 from py2neo import Graph
 from operator import itemgetter
-# input : ville, [ambiances], [categories], cat_tarif
+import time
+
 
 class MoteurReco:
 
@@ -108,6 +109,24 @@ class MoteurReco:
         for user, count in res:
             self.n_pos_reviews_pr[user] += count
 
+        # Dictionnaire entre user_id et le nombre de reviews ecrites par ses amis
+        self.n_reviews_friends = {id : 0 for id in self.users_id}
+        for user, friends in self.id_friends.items():
+            for friend in friends:
+                self.n_reviews_friends[user] += self.n_reviews[friend]
+
+        # Dictionnaire entre user_id et le nombre de reviews pour des restaurants dans la ville 'city'
+        self.n_reviews_city = {id : 0 for id in self.users_id}
+        q=f"match (u:users)-[:reviewed]->(r:reviews)-[:revRest]->(:restaurants)-[:located]->(c:cities) where c.city='{self.city}' return u.user_id, count(r)"
+        for user,count in self.graph.run(q).to_table():
+            self.n_reviews_city[user]=count
+        
+        # Dictionnaire entre user_id et le nombre de reviews ecrites par ses amis pour des restaurants dans la ville 'city'
+        self.n_reviews_friends_city = {id : 0 for id in self.users_id}
+        for user, friends in self.id_friends.items():
+            for friend in friends:
+                self.n_reviews_friends_city[user] += self.n_reviews_city[friend]
+
 
 
     ##### S1 : Score Social Immédiat #####
@@ -156,7 +175,11 @@ class MoteurReco:
 
     ##### Facteur d'Adéquation Géographique #####
     def f_geographique(self,u):
-        return 0
+        n_reviews_friends = self.n_reviews_friends[u]
+        if n_reviews_friends==0:
+            return 0
+        else:
+            return self.n_reviews_friends_city[u]/self.n_reviews_friends[u]
 
     ##### Score Utilisateur #####
     def score_user(self, id_user):
@@ -170,21 +193,40 @@ class MoteurReco:
 
     ##### Récupération des 10 meilleurs utilisateurs #####
     def get_best_users(self):
-        return dict(sorted(self.score.items(), key=itemgetter(1), reverse=True)[:10])
+        self.update_scores()
+        best_users = dict(sorted(self.score.items(), key=itemgetter(1), reverse=True)[:10])
+        return best_users
+
+    ##### Affichage des utilisateurs à recommander #####
+    def print_best_users(self):
+        start = time.time()
+        best_users = self.get_best_users()
+        print(f"Temps d'éxécution : {time.time()-start:.3} ms\n")
+        print("user_id                 name    score")
+        for k,v in best_users.items():
+            q=f"match (u:users) where u.user_id='{k}' return u.name"
+            print(f"{k}  {self.graph.run(q).to_table()[0][0]}  {v}")
 
 
 
 if __name__=="__main__":
     alpha, beta, gamma, delta = 0.3, 0.3, 0.3, 0.1
     
-    city='Wilmington'
-    ambiences=['casual']
-    categories=['Pizza','Burgers','Italian']
-    price_range=1
+    tests = [
+        {'city':'Wilmington', 'ambiences':['casual'], 'categories':['Pizza','Burgers','Italian'],'price_range':1},
+        {'city':'Wilmington', 'ambiences':['casual','romantic'],'categories':['Chinese'], 'price_range':2},
+        {'city':'Wilmington', 'ambiences':['hipster'], 'categories':['Nightlife','Bars'],'price_range':1},
+        {'city':'New Castle', 'ambiences':['casual','classy'], 'categories':['Coffee & Tea'], 'price_range':2},
+        {'city':'New Castle', 'ambiences':['classy'], 'categories':['Seafood'],'price_range':1}]
 
-    mot = MoteurReco(alpha, beta, gamma, delta, city, ambiences, categories, price_range)
-    mot.update_scores()
-    print(mot.get_best_users())
+    for i, test in enumerate(tests):
+        print(f"\n\n#################### Test n°{i} ####################\n")
+        city = test['city']
+        ambiences = test['ambiences']
+        categories = test['categories']
+        price_range = test['price_range']
+        mot = MoteurReco(alpha, beta, gamma, delta, city, ambiences, categories, price_range)
+        mot.print_best_users()
     
 
 
