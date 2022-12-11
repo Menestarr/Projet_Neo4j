@@ -201,7 +201,7 @@ class MoteurReco:
     def print_best_users(self):
         start = time.time()
         best_users = self.get_best_users()
-        print(f"Temps d'éxécution : {time.time()-start:.3} ms\n")
+        print(f"Temps d'exécution : {time.time()-start:.3} ms\n")
         print("user_id                 name    score")
         for k,v in best_users.items():
             q=f"match (u:users) where u.user_id='{k}' return u.name"
@@ -220,7 +220,7 @@ if __name__=="__main__":
         {'city':'New Castle', 'ambiences':['classy'], 'categories':['Seafood'],'price_range':1}]
 
     for i, test in enumerate(tests):
-        print(f"\n\n#################### Test n°{i} ####################\n")
+        print(f"\n\n#################### Test n°{i+1} ####################\n")
         city = test['city']
         ambiences = test['ambiences']
         categories = test['categories']
