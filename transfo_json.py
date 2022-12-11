@@ -133,7 +133,7 @@ df_restCat.to_csv(DB_PATH+'restCat_relationships.csv')
 print("------- Création de friends_relationships.csv -------\n")
 relationships = []
 columns = [":START_ID(users)",":END_ID(users)"]
-for _, user in tqdm(yelp_user.iterrows()):
+for _, user in tqdm(yelp_user.iterrows(), total=yelp_user.shape[0]):
     user_id = user["user_id"]
     friends = user["friends"]
     for friend_id in friends:
@@ -145,30 +145,28 @@ friends_relationships.to_csv(DB_PATH+'friends_relationships.csv')
 
 ########## reviewed_relationships.csv ##########
 print("------- Création de reviewed_relationships.csv -------\n")
-reviewed_relationships = pd.DataFrame(columns=[":START_ID(users)",":END_ID(reviews)"])
 
+data = []
 for i in tqdm(yelp_review.index):
     row = yelp_review.iloc[i]
     review_id = row["review_id"]
     user_id = row["user_id"]
-    df_to_concat = pd.DataFrame(data=[[user_id, review_id]], columns=[":START_ID(users)",":END_ID(reviews)"])
-    
-    reviewed_relationships = pd.concat([reviewed_relationships,df_to_concat])
+    data.append([user_id, review_id])
 
+reviewed_relationships = pd.DataFrame(data=data, columns=[":START_ID(users)",":END_ID(reviews)"])
 reviewed_relationships.to_csv(DB_PATH+'reviewed_relationships.csv', index=False)
 
 ########## revRest_relationships.csv ##########
 print("------- Création de revRest_relationships.csv -------\n")
-revRest_relationships = pd.DataFrame(columns = [":START_ID(reviews)",":END_ID(restaurants)"])
 
+data = []
 for i in tqdm(yelp_review.index):
     row = yelp_review.iloc[i]
     review_id = row["review_id"]
     restaurant_id = row["business_id"]
-    df_to_concat = pd.DataFrame(data=[[review_id, restaurant_id]], columns=[":START_ID(reviews)",":END_ID(restaurants)"])
-    
-    revRest_relationships = pd.concat([revRest_relationships,df_to_concat])
+    data.append([review_id, restaurant_id])
 
+revRest_relationships = pd.DataFrame(data=data, columns = [":START_ID(reviews)",":END_ID(restaurants)"])
 revRest_relationships.to_csv(DB_PATH+'revRest_relationships.csv', index=False)
 
 ########## revAmb_relationships.csv ##########
