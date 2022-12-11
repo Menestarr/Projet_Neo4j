@@ -14,8 +14,8 @@ yelp_user = pd.read_json(DATA_PATH+'yelp_user.json')
 yelp_review = pd.read_json(DATA_PATH+'yelp_review.json')
 
 ########## Preprocessing ##########
-yelp_restaurants["city"] = yelp_restaurants["city"].apply(lambda x : x.lower().replace(" ",""))
-yelp_restaurants["categories"] = yelp_restaurants["categories"].apply(lambda x : [y.replace(" ","").lower() for y in x.split(',')])
+yelp_restaurants["city"] = yelp_restaurants["city"].apply(lambda x : x.lower().replace(" ","")) # les villes en minuscule et sans espace pour éviter les doublons
+yelp_restaurants["categories"] = yelp_restaurants["categories"].apply(lambda x : [y.replace(" ","").lower() for y in x.split(',')]) # de même pour les catégories
 
 ########## users.csv ##########
 print("------- Création de users.csv -------\n")
@@ -42,7 +42,7 @@ for index, item in yelp_restaurants.iterrows():
     try:
         p = item['attributes'].get('RestaurantsPriceRange2')
         if p == None:
-            price_range.append(None)
+            price_range.append(None) # on laisse None aux restaurants qui n'ont pas de price_range
         else:
             price_range.append(int(p))
     except:
@@ -57,8 +57,6 @@ df_rest.to_csv(DB_PATH+'restaurants.csv')
 print("------- Création de cities.csv -------\n")
 cities = []
 for city in yelp_restaurants['city']:
-    city = city.lower()
-    city = city.replace(" ","")
     if city not in cities:
         cities.append(city)
 
@@ -94,8 +92,6 @@ print("------- Création de category.csv -------\n")
 list_cat = []
 for cats in yelp_restaurants['categories']:
     for cat in cats:
-        cat = cat.replace(" ","")
-        cat = cat.lower()
         if cat not in list_cat:
             list_cat.append(cat)
 
@@ -126,8 +122,7 @@ for val in yelp_restaurants[['business_id','categories']].values:
         list_rest.append(val[0])
 
 df_restCat = pd.DataFrame({":START_ID(restaurants)": list_rest, ":END_ID(categories)":list_cat})
-df_restCat = df_restCat.set_index(":START_ID(restaurants)")
-df_restCat.to_csv(DB_PATH+'restCat_relationships.csv')
+df_restCat.to_csv(DB_PATH+'restCat_relationships.csv', index=False)
 
 ########## friends_relationships.csv ##########
 print("------- Création de friends_relationships.csv -------\n")
@@ -140,8 +135,7 @@ for _, user in tqdm(yelp_user.iterrows(), total=yelp_user.shape[0]):
         relationships.append([user_id,friend_id])
 
 friends_relationships = pd.DataFrame(data=relationships,columns=columns)
-friends_relationships = friends_relationships.set_index(":START_ID(users)")
-friends_relationships.to_csv(DB_PATH+'friends_relationships.csv')
+friends_relationships.to_csv(DB_PATH+'friends_relationships.csv', index=False)
 
 ########## reviewed_relationships.csv ##########
 print("------- Création de reviewed_relationships.csv -------\n")
@@ -188,31 +182,22 @@ def ambs_to_dict(ambs):
     except:
         return {}
 
-ambiences = df_ambience
-
 ambiences_id = {}
 for i in df_ambience.index:
     row = df_ambience.iloc[i]
     ambiences_id[row["ambience"]] = i
-    
 
-restAmb = pd.DataFrame(columns = [":START_ID(restaurants)", ":END_ID(ambiences)"])
-
+data=[]
 for i in tqdm(yelp_restaurants.index):
     row = yelp_restaurants.iloc[i]
-    data = []
     restaurant_id = row["business_id"]
     try:
         ambs = ambs_to_dict(row["attributes"]["Ambience"])
         for amb, b in ambs.items():
             if b == "True":
-                data.append([restaurant_id, ambiences_id[amb]])
-    
-        df_to_concat = pd.DataFrame(data=data, columns=[":START_ID(restaurants)", ":END_ID(ambiences)"])
-    
-        restAmb = pd.concat([restAmb,df_to_concat])
-        
+                data.append([restaurant_id, ambiences_id[amb]])       
     except:
         pass
 
+restAmb = pd.DataFrame(data=data, columns=[":START_ID(restaurants)", ":END_ID(ambiences)"])
 restAmb.to_csv(DB_PATH+"restAmb_relationships.csv", index=False)
