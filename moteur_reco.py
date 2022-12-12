@@ -199,9 +199,8 @@ class MoteurReco:
 
     ##### Affichage des utilisateurs à recommander #####
     def print_best_users(self):
-        start = time.time()
         best_users = self.get_best_users()
-        print(f"Temps d'exécution : {time.time()-start:.3} ms\n")
+        
         print("user_id                 name    score")
         for k,v in best_users.items():
             q=f"match (u:users) where u.user_id='{k}' return u.name"
@@ -221,12 +220,14 @@ if __name__=="__main__":
 
     for i, test in enumerate(tests):
         print(f"\n\n#################### Test n°{i+1} ####################\n")
+        start = time.time()
         city = test['city']
         ambiences = test['ambiences']
         categories = test['categories']
         price_range = test['price_range']
         mot = MoteurReco(alpha, beta, gamma, delta, city, ambiences, categories, price_range)
         mot.print_best_users()
+        print(f"Temps d'exécution : {time.time()-start:.3} s\n")
     
 
 

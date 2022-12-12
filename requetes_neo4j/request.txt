@@ -14,11 +14,21 @@ match ()-[n:restCat]->() return count(n) ----- 4218
 match ()-[n:revRest]->() return count(n) ----- 49150
 match ()-[n:reviewed]->() return count(n) ----- 49150
 
+2.3)
+MATCH (res:restaurants)-[r:restCat]->(cat:categories)
+WHERE res.name = "8th & Union Kitchen"
+RETURN cat.category
+
 2.4)
 match (r:restaurants)-[l:restAmb]->(a:ambiences) 
 where r.name="8th & Union Kitchen"
 return a.ambience
 ----- casual / trendy / classy
+
+2.5)
+MATCH (rev:reviews)-[r:revRest]->(res:restaurants)
+WHERE res.name = "Tokyo Sushi"
+RETURN rev
 
 2.6)
 match (r:restaurants)<-[:revRest]-(:reviews)<-[:reviewed]-(a:users)-[:friends]->(b:users)-[:reviewed]->(:reviews)-[:revRest]->(r:restaurants)
@@ -26,7 +36,21 @@ where r.name="Tokyo Sushi"
 return distinct a.name,b.name
 ----- (Karen, Scott) / (Scott,Karen)
 
+2.7)
+MATCH (u:users)-[r:friends]->(friend:users)
+WITH u, count(friend) AS u_friends 
+ORDER BY u_friends DESC
+LIMIT 1
+RETURN u.name, u_friends
+
 2.8) match (a:ambiences)<-[:restAmb]-(r:restaurants)<-[:revRest]-(:reviews)<-[:reviewed]-(u:users)-[:friends]->(v:users)-[:reviewed]->(:reviews)-[:revRest]->(x:restaurants)-[:restAmb]->(a:ambiences)
 where r.name="Tokyo Sushi" and x <> r
 return distinct v.name
 ----- 280 users
+
+2.9)
+MATCH (u1:users)-[:reviewed]->(rev1:reviews WHERE toInteger(rev1.stars) >= 4)-[:revRest]->(res:restaurants)<-[:revRest]-(rev2:reviews WHERE toInteger(rev2.stars) >= 4)<-[:reviewed]-(u2:users)
+WITH u1, u2, res, count(res) AS res_count
+WHERE res_count >= 10
+WITH count(u1) AS pair_count
+RETURN pair_count
