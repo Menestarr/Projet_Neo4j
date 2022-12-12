@@ -15,7 +15,7 @@ class MoteurReco:
         self.categories = [x.lower().replace(" ","") for x in categories]
         self.price_range = price_range
 
-        self.graph = Graph("bolt://localhost:11006", auth=("neo4j","1234"))
+        self.graph = Graph("bolt://localhost:7687", auth=("neo4j","1234"))
 
         q = "match (u:users) return u.user_id"
         # Liste des tous les user_id
@@ -42,6 +42,7 @@ class MoteurReco:
         
         # Dictionnaire entre user_id et les id des amis de ses amis
         self.id_friends_of_friends = self.id_friends.copy()
+
         # Dictionnaire entre user_id et son nombre d'amis de ses amis
         self.n_friends_of_friends = {id:0 for id in self.users_id}
         for key, friends in self.id_friends_of_friends.items():
@@ -75,7 +76,7 @@ class MoteurReco:
 
         q="match (u:users)-[:reviewed]->(r:reviews) with u,r where toInteger(r.cool)>0 return u.user_id,count(r)"
         res= self.graph.run(q).to_table()
-        # Dictionnaire entre user_id et le nombre de review au moins une fois useful
+        # Dictionnaire entre user_id et le nombre de review au moins une fois cool
         self.n_cool_reviews = {id:0 for id in self.users_id}
         for user, count in res:
             self.n_cool_reviews[user] = count
@@ -102,7 +103,7 @@ class MoteurReco:
         # Nombre de catégories
         self.n_categories = len(self.categories)
 
-        # Dictionnaire entre user_id et le nombre de reviews positives pour le même price range du restaurant
+        # Dictionnaire entre user_id et le nombre de reviews positives pour le même price range que celui du restaurant
         self.n_pos_reviews_pr = {id : 0 for id in self.users_id}
         q=f"match (u:users)-[:reviewed]->(r:reviews)-[]->(rest:restaurants) with u,r,rest where toInteger(r.stars)>=4 and toInteger(rest.price_range)={self.price_range} return u.user_id,count(r)"
         res=self.graph.run(q).to_table()
@@ -175,8 +176,7 @@ class MoteurReco:
 
     ##### Facteur d'Adéquation Géographique #####
     def f_geographique(self,u):
-        n_reviews_friends = self.n_reviews_friends[u]
-        if n_reviews_friends==0:
+        if self.n_reviews_friends[u] == 0:
             return 0
         else:
             return self.n_reviews_friends_city[u]/self.n_reviews_friends[u]
