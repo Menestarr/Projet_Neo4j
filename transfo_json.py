@@ -165,7 +165,10 @@ revRest_relationships.to_csv(DB_PATH+'revRest_relationships.csv', index=False)
 
 ########## revAmb_relationships.csv ##########
 print("------- Création de revAmb_relationships.csv -------\n")
+
 def ambs_to_dict(ambs):
+    # créatin d'un dictionnaire pour les ambiances
+    # nécessaire car les ambiances sont dans un dictionnaire mais sous forme de string (i.e. de la forme : "{k:v,k1:v1, ...}")
     try:
         d = {}
         ambs = ambs.replace("{","")
